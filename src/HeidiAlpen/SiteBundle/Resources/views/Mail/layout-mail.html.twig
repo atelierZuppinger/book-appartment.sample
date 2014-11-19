@@ -1,0 +1,43 @@
+{% set spacer = '<img src="' ~ app.request.uriForPath('/imgs/spacer.gif') ~ '" />' %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+	</head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#ffffff">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable" bgcolor="#ffffff">
+        		<tr>
+					<td height="7" bgcolor="#c89e65">{{ spacer|raw }}</td>
+        		</tr>
+				<tr>
+    				<td align="center" valign="top">
+						<table id="Tableau_01" width="420" border="0" cellpadding="28" cellspacing="0" bgcolor="#ffffff">
+							<tr>
+								<td valign="top" align="center">
+									<p style="margin-bottom: 56px;">
+										<img src="{{ app.request.uriForPath('/imgs/logo.png') }}" alt="HEIDI-Alpen" style="font-family: Arial, sans-serif;font-size: 18px;line-height: 18px;margin-top: 0;color: #B18147;text-align:center;" />
+									</p>
+
+									{% block header %}{% endblock %}
+									
+									{% block body %}{% endblock %}
+									
+									<p style="font-family: Arial, sans-serif;font-size: 12px;line-height: 18px;margin-top: 0;color: #333333;margin-bottom: 28px;text-align:center;">
+										<span style="font-weight:bold;font-size:14px;">{{ 'global.address.nom'|trans }}</span><br />
+										{{ 'global.address.group'|trans }} · {{ 'global.address.rue'|trans }}<br />
+										{{ 'global.address.cp'|trans }} {{ 'global.address.ville'|trans }} · {{ 'global.address.pays'|trans }}<br />
+										Tel. {{ 'global.address.tel'|trans }} · {{ 'global.address.email'|trans }}
+									</p>
+								</td>
+							</tr>
+						</table>
+	            	</td>
+				</tr>
+	      	</table>
+	    </center>
+	</body>
+</html>

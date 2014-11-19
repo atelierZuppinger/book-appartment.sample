@@ -1,0 +1,14 @@
+body > div > div {
+	float: left;
+}
+
+div.content {
+	margin-left: 2%;
+	width: 80%;
+}
+
+div#more {
+	width: 16%;
+	
+	font-weight: bold;
+}

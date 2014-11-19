@@ -1,0 +1,38 @@
+<article class="sbrinz">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgSbrinz imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_sbrinz.png') }}" alt="{{ 'theCheeses.sbrinz.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_sb.png') }}" alt="{{ 'theCheeses.sbrinz.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_sb.png') }}" alt="trait" />
+    </figure>
+  </div>
+  {% if app.request.getLocale() == 'ja' %}
+    <img class="packaging" src="{{ asset('imgs/heidi_pack-Sbrinz_jp.png') }}" alt="{{ 'theCheeses.sbrinz.nom'|trans }}" />
+  {% endif %}
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.sbrinz.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.sbrinz.slogan'|trans }}</h2>
+  <p>
+    <b>{{ 'theCheeses.sbrinz.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.sbrinz.p0'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.sbrinz.p1'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.sbrinz.p2'|trans }}
+  </p>
+  <p>
+    {% if app.request.getLocale() == 'ru' %}
+      <strong>
+        * Сбринц с официальным сертификатом контроля подлинности происхождения<br />
+        {{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.sbrinz.maturation'|trans }}
+      </strong>
+    {% else %}
+      <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.sbrinz.maturation'|trans }}</strong>
+    {% endif %}
+  </p>
+</article>

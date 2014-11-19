@@ -1,0 +1,36 @@
+<article class="emmentaler">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgEmmentaler imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_emm.png') }}"  alt="{{ 'theCheeses.emmentaler.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_em.png') }}" alt="{{ 'theCheeses.emmentaler.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_em.png') }}" alt="trait" />
+    </figure>
+  </div>
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.emmentaler.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.emmentaler.slogan'|trans }}</h2>
+  <img class="packaging" src="{{ app.request.getLocale() == 'ja' ? asset('imgs/heidi_pack-Emm_jp.png') : asset('imgs/heidi_pack_emm.png') }}" alt="{{ 'theCheeses.emmentaler.nom'|trans }}" />
+  <p>
+    <b>{{ 'theCheeses.emmentaler.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.emmentaler.p0'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.emmentaler.p1'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.emmentaler.p2'|trans }}
+  </p>
+  <p>
+    {% if app.request.getLocale() == 'ru' %}
+      <strong>
+        * эмменталь с официальным сертификатом контроля подлинности происхождения<br />
+        {{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.emmentaler.maturation'|trans }}
+      </strong>
+    {% else %}
+      <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.emmentaler.maturation'|trans }}</strong>
+    {% endif %}
+  </p>  
+</article>

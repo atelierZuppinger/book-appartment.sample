@@ -1,0 +1,64 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theStory.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theStory.seo.description'|trans }}{% endblock %}
+
+{% block body_class %}page-story{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+  <div class="center-content fullColor intro">
+    <h1>{{ 'theStory.title'|trans }}</h1>
+    <p>
+      <b>
+        {{ 'theStory.header'|trans }}
+      </b>
+    </p>
+  </div>
+
+  <section id="land">
+    <div class="center-content fullColor">
+      <img class="fullImg" src="{{ asset('imgs/heidi_visuel_story.jpg') }}" alt="{{ 'theStory.land.title'|trans }}" />
+      <h2>
+        {{ 'theStory.land.title'|trans|nl2br }}
+      </h2>
+      <p>
+        {{ 'theStory.land.p0'|trans|nl2br }}
+      </p>
+
+
+    </div>
+  </section>
+  <section id="aop">
+    <div class="center-content">
+      <img class="center" src="{{ asset('imgs/AOP.png') }}" alt="AOP" />
+      <h2>
+        {{ 'theStory.aop.title'|trans }}
+      </h2>
+      <p>
+        {{ 'theStory.aop.p0'|trans|nl2br }}
+      </p>
+    </div>
+  </section>
+
+  <div>
+    <div class="center-content">
+      <div id="relatedLinks">
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-cheeses.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-expertise-methods.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/gruyere.html.twig' %}
+      </div>
+    </div>
+  </div>
+
+  <span class="clear"></span>
+  
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+{% endblock %}

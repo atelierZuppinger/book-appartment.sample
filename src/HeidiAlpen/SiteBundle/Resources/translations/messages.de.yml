@@ -1,0 +1,233 @@
+global:
+    topMenu:
+        login: Login
+        langue: Sprache 
+        contact: Kontakt
+    topNav:
+        theStory: Die Geschichte
+        theExpertise: Das Können
+        theCheeses: Der Käse
+        theReceipts: The Receipts
+    footer:
+        slogan: Our passion for a swiss legend.
+
+theIndex: 
+    seo:
+        title: Our passion for a swiss legend.
+        description: Der wahre Schatz der Schweiz ist ihr leckerer Käse. 
+
+theStory:
+    seo:
+        description: Heidi, das kleine Mädchen aus den bekannten Kinderbüchern von Johanna Spyri, liebte es, durch die saftigen Bergwiesen mit ihren Kühen und Blumen zu wandern. 
+    title: Die Geschichte
+    header: |
+        Heidi, das kleine Mädchen aus den bekannten Kinderbüchern von Johanna Spyri, liebte es, durch die saftigen Bergwiesen mit ihren Kühen und Blumen zu wandern. In dieser wundervollen, intakten Landschaft wird der HEIDI Alpen Käse hergestellt. Unsere ausschliesslich in der Schweiz produzierten Produkte basieren auf dem umfangreichen Fachwissen von MIFROMA. Der Käse wird gepflegt, gewaschen und verfeinert, bis er vollständig ausgereift ist. So erhält er seinen intensiven Geschmack und typischen Charakter. Selbst wenn wir heute moderne Technologien verwenden, so ist unsere Leidenschaft für guten Käse doch so alt wie die Geschichten von Heidi. Guten Appetit!
+    land:
+        title: |
+            Herzlich willkommen im Land
+            der Käsespezialitäten
+        p0: |
+            Der wahre Schatz der Schweiz ist ihr leckerer Käse. MIFROMA ist sich der grossen Tradition des Landes voll bewusst und freut sich daher, das neue Sortiment HEIDI Alpen vorstellen zu dürfen: Eine vorzügliche Auswahl der besten Produkte von den grünen Weiden der Schweiz. HEIDI Alpen Käse ist absolut authentisch: Er wird in der Schweiz aus frischer, hochwertiger Milch im Einklang mit Natur, Tradition und Handwerkskunst hergestellt und erfüllt die strengen Anforderungen in puncto Qualität, Hygiene und Lagerung. Sie werden die charakteristischen Eigenschaften der Schweizer Natur in unserem hochwertigen HEIDI Alpen Sortiment schmecken.
+    aop:
+        title: AOP, das Zeichen für echte Qualität
+        p0: |
+            AOP bedeutet „Appellation d’Origine Protégée“ und ist eine weltweit anerkannte und geschützte Ursprungsbezeichnung, die im Schweizer Recht verankert ist. Die Verwendung dieser Ursprungsbezeichnung wird streng überwacht, weshalb nur wenige Premiumlebensmittel weltweit das AOP-Siegel tragen dürfen.
+            Die Bezeichnung AOP trägt dazu bei, die Existenzgrundlage von handwerklichen Lebensmittelherstellern zu erhalten, denn sie gewährleistet, dass ausschliesslich die betreffenden traditionellen kulinarischen Spezialitäten, die manchmal nur an einem einzigen Ort weltweit hergestellt werden, das AOP-Zeichen erhalten. AOP steht also nicht nur für den Schutz althergebrachter Rezepte und Techniken, sondern auch für das Vermächtnis von Spezialitätenherstellern an nachfolgende Generationen.
+            Wenn Sie eine Qualitätsgarantie wünschen, achten Sie auf das AOP-Zeichen.
+
+theExpertise:
+    seo:
+        description: Das Geheimnis eines guten Käses ist das Zusammenspiel von ursprünglicher Natur, hochwertiger Milch und dem Können des Käsermeisters. 
+    title: Das Können
+    header: |
+        Das Geheimnis eines guten Käses ist das Zusammenspiel von ursprünglicher Natur, hochwertiger Milch und dem Können des Käsermeisters. MIFROMA hat mehr als 50 Jahre Erfahrung in der Käseherstellung gesammelt und vertieft das Fachwissen bei der Auswahl, Reife und Produktion von Käse ständig weiter. Erst wird der Käse liebevoll in den Bergen oder in nahegelegenen Dörfern von Käsereigenossenschaften hergestellt. Dann kommen die HEIDI Alpen Produkte in majestätische Käsehöhlen tief in den Bergen, wo die köstlichen Erzeugnisse langsam in natürlicher Umgebung und bei gleichbleibender Temperatur reifen. Dort werden die Käselaibe regelmässig gewaschen, kontrolliert und gewendet. 
+        Jeder Laib wird einer sorgfältigen Qualitätsprüfung unterzogen. 
+        Viele Arbeitsschritte bei der Herstellung dieses erstklassigen Käses werden noch immer per Hand ausgeführt, während andererseits neuste Technologien absolute Hygiene und beste Qualität gewährleisten.
+    methods:
+        title: Traditionelle Methoden, moderne Technik
+        p0: |
+            Die Grundlagen der Käseherstellung haben sich im Laufe der Jahrhunderte nicht verändert.
+            Die Produktion von Schweizer Käse verläuft in fünf Schritten: Gerinnen, Vorkäsen; Erhitzen, Formen und Baden in Salzlake; Gären und Reifen; Qualitätskontrolle.
+            Alle unsere Käsesorten sind das Produkt von jahrhundertealter Fachkenntnis und Handwerkskunst in Verbindung mit modernsten Qualitätskontrollen und Herstellungstechniken. Genauigkeit und Geschmack sind uns wichtig, deshalb werden viele dieser Arbeitsschritte vom Salzbad über das Pflegen und Wenden bis zum Waschen des Käselaibs in Handarbeit durchgeführt. Jeder Käse wird vom Käsermeister kontrolliert, bevor er zum Verkauf freigegeben wird. Eine Besonderheit der MIFROMA Käse ist, dass viele unserer Produkte in einem riesigen Naturkeller in Ursy, einem Dorf am Fusse der Alpen, reifen. Die alte Felshöhle wurde vor über 50 Jahren in den idealen Käsekeller verwandelt. Unsere preisgekrönte Höhle wurde über Jahrhunderte hinweg in den Berg getrieben. Sie zeichnet sich durch eine hohe Luftfeuchtigkeit und eine über das Jahr hinweg annähernd konstante Temperatur von 10 bis 14 °C aus. In dieser kühlen Umgebung können unsere Käse unter idealen Bedingungen bis zur Perfektion heranreifen.
+
+theCheeses:
+    seo:
+        description: Das grosse Sortiment von HEIDI Alpen hält für jede Gelegenheit eine köstliche Spezialität bereit.
+    title: Der Käse
+    header: |
+        Würzig oder fruchtig, cremig oder salzig, vom riesigen Leib oder als feine Scheibe, zum Fondue oder zum Abschluss eines Menüs: das grosse Sortiment von HEIDI Alpen hält für jede Gelegenheit eine köstliche Spezialität bereit.
+        Wählen Sie aus Hunderten von Käsespezialitäten, ausgewählt aus den typischen Produkten der Schweiz. Jede Käsesorte wird in einer speziellen Region und nach uralten Methoden und Traditionen hergestellt. Dieser kulturelle Reichtum bringt eine riesige Vielfalt an Aromen und Geschmacksrichtungen hervor. Unser kulinarisches Erbe – zum Anbeissen!
+    discover:
+        title: |
+            Entdecken Sie unser Sortiment
+    maturation: Reifung:
+    gruyere:
+        seo:
+            description: Eine vollmundige, aromatische Schweizer Spezialität
+        nom: Le Gruyère AOP
+        maturation: 6 bis 14 Monate
+        slogan: Eine vollmundige, aromatische Schweizer Spezialität
+        header: |
+            Schon seit mehreren Hundert Jahren wird dieser Käse in der Gegend um das Westschweizer Städtchen Greyerz hergestellt – traditionell in den Dorfkäsereien nach überliefertem Originalrezept. Le Gruyère AOP ist mit seinem salzigen Aroma eine Köstlichkeit für Liebhaber kräftiger Käsesorten. 
+        p0: |
+            Seinen einzigartigen Charakter verdankt dieser hochwertige Käse dem besonderen Herstellungsverfahren. Le Gruyère AOP wird aus bester Rohmilch von Kühen hergestellt, die im Sommer Weidegras und im Winter Heu fressen. Die Verwendung von Zusatzstoffen ist verboten.
+        p1: |
+            Le Gruyère AOP Käselaibe reifen in einer Felshöhle in Ursy, einem kleinen Schweizer Dorf am Fusse der Alpen. Eine kürzere Reifedauer lässt milden Käse entstehen, bei längerer Reifezeit wird der Käse kräftiger im Geschmack. In dieser besonderen Umgebung erhält Le Gruyère AOP seinen wohlschmeckenden, salzigen Charakter. Während des Reifeprozesses werden die Käselaibe regelmässig gewendet und mit Salzlake gewaschen. Die althergebrachten Techniken, eine lange Reifezeit und die Pflege dieses hochkarätigen Produkts verleihen Le Gruyère AOP seinen unvergleichlichen Geschmack.
+        p2: |
+            Le Gruyère AOP gehört auf jede gute Käseplatte. Mit seinem intensiven Aroma eignet er sich zum Abschluss eines Essens, idealerweise in Begleitung eines fruchtigen, körperreichen Weines.
+    sbrinz:
+        seo:
+            description: Die älteste Käsesorte der Schweiz trifft den modernen Geschmack
+        nom: Sbrinz AOP
+        maturation: 20 Monate
+        slogan: Die älteste Käsesorte der Schweiz trifft den modernen Geschmack
+        header: |
+            Es wird behauptet, der Sbrinz sei die älteste Schweizer Käsesorte und entspräche dem „Caesus Alpinus“, den der römische Dichter Plinius der Ältere vor 2.000 Jahren beschrieb. Obgleich diese faszinierende Geschichte nicht eindeutig belegt werden kann, wissen wir immerhin, dass der heutige Sbrinz auf das 16. Jahrhundert zurückgeht. Der in der Gegend von Brienz in der Innerschweiz beheimatete, sehr harte Käse wurde früher mit Maultieren nach Italien transportiert. Von dort wiederum schickte man Gewürze und Wein auf die Reise und die sogenannte Sbrinzroute entstand. 
+        p0: |
+            Der handgemachte Käse ähnelt dem Parmesan und überzeugt mit einem würzigen, intensiven Aroma. Seine harte Konsistenz und den aromatischen Charakter verdankt er einer ausgesprochen langen Reifung, die ihm auch heute noch gewährt wird. 
+        p1: |
+            Der mit dem Qualitätssiegel AOP (geschützte Ursprungsbezeichnung) ausgezeichnete Sbrinz reift im Allgemeinen mindestens 20 Monate. Erst dann entfaltet er seinen ausgeprägten Charakter. 
+        p2: |
+            Der handwerklich hergestellte Käse kann in Bröckchen zusammen mit einem Rotwein als Aperitif serviert werden oder eine gute Käseplatte ergänzen.
+    emmentaler:
+        seo:
+            description: Der helle, cremige Emmentaler AOP ist der wohl berühmteste Käse aus der Schweiz. 
+        nom: Emmentaler AOP
+        maturation: 4 bis 8 Monate
+        slogan: Der König der Käse
+        header: |
+            Der helle, cremige Emmentaler AOP ist der wohl berühmteste Käse aus der Schweiz. Typisch sind der milde Geschmack und die kirschgrossen Löcher. Der „König der Käse“ wird seit dem 13. Jahrhundert im malerischen Tal des Flusses Emme hergestellt.
+        p0: |
+            Der Emmentaler AOP schmeichelt den Gaumen mit seinem milden, süsslichen und leicht nussigen Geschmack. Nur 200 Dorfkäsereien im pittoresken Tal der Emme sind berechtigt, den Schweizer Emmentaler herzustellen. Hierbei müssen strenge, überlieferte Methoden eingehalten werden. Nur Milch von Weidekühen ist erlaubt – Silofutter ist untersagt. 
+        p1: |
+            Die appetitlich frische, nicht pasteurisierte Milch kommt direkt von der Molkerei und ist frei von Zusatzstoffen. Mit seinem süssen, milden Geschmack ist der Emmentaler AOP wirklich ein Käse für die gesamte Familie. Die Kinder lieben seine typischen Löcher und die Küchenmeister seine Vielseitigkeit beim Zubereiten von Speisen. 
+        p2: |
+            Emmentaler AOP wird meist kalt verzehrt und eignet sich hervorragend zum Frühstück oder als Dessert. Ein Klassiker auf jedem Käseteller.
+    tetedemoine:
+        seo:
+            description: Der Tête de Moine AOP („Mönchskopf“) ist eine Schweizer Käsespezialität, deren Wurzeln 800 Jahre zurück ins Kloster Bellelay im Berner Jura reichen. 
+        nom: Tête de Moine AOP
+        maturation: 3 Monate
+        slogan: Ein einzigartiger Käse, eine ungewöhnliche Art des Servierens
+        header: |
+            Der Tête de Moine AOP („Mönchskopf“) ist eine Schweizer Käsespezialität, deren Wurzeln 800 Jahre zurück ins Kloster Bellelay im Berner Jura reichen. Der Käse mit dem einzigartigen Geschmack wird auf ungewöhnliche Weise serviert: Entweder hobelt man mit einem Spezialmesser Käserosetten ab oder man schneidet den Tête de Moine AOC in kleine, leckere Stücke.
+        p0: |
+            Der Tête de Moine AOP ist ein sehr würziger Halbhartkäse mit kräftigem Aroma. Seinen vollmundigen Geschmack verdankt er der naturbelassenen, unbehandelten Milch von Kühen, die den Sommer über auf den Kräuterwiesen und Weiden der Jurahänge gegrast haben und im Winter das duftenden Heu eben jener Wiesen als Futter erhalten.
+        p1: |
+            Dieser besondere Käse wird üblicherweise in hauchdünnen Käserosetten verspeist, die man mit Geräten wie der Girolle oder der Pirouette vom Käselaib abschabt. So kann sich der volle Geschmack entfalten und höchster Käsegenuss ist garantiert. 
+        p2: |
+            Der Tête de Moine wird am besten direkt aus dem Kühlschrank serviert, denn dann lassen sich die Käserosetten am Besten abhobeln. Dieses kulinarische Produkt kann als Vorspeise mit einem Aperitif, als Dessertkäse oder als Gourmetsnack genossen werden. 
+    edelsuisse:
+        seo:
+            description: Die Berner Alpen sind eine Region der Schweiz, die für gelebtes Brauchtum vor der Kulisse atemberaubender Berglandschaften bekannt ist.
+        nom: Edel Suisse
+        maturation: 3 Monate
+        slogan: Reich an Brauchtum
+        header: |
+            Die Berner Alpen sind eine Region der Schweiz, die für gelebtes Brauchtum vor der Kulisse atemberaubender Berglandschaften bekannt ist. Auf ihren saftigen Wiesen grasen Kühe, deren sahnige Milch zur Herstellung dieses traditionellen Halbhartkäses verwendet wird.
+        p0: |
+            Edel Suisse ist ein Handwerkserzeugnis, das nach traditionellen Methoden hergestellt wird. Milde Süsse und feine Würze zeichnen diesen Käse aus, der vier Monate reift und mit zunehmender Reife an Charakter gewinnt. Der helle, elfenbeinfarbene Teig ist weich und fein, durchsetzt von winzigen Löchern.
+        p1: |
+            Die geprägten Motive sind typisch für die Schweiz und lassen den Edel Suisse in jeder Käsetheke gut aussehen. Dieser Feinschmeckerkäse zeichnet sich durch eine dunkle Rinde mit reliefartiger Dekoration in Form von Edelweiss und der Schweizerfahne aus. 
+        p2: |
+            Ein Käse für jede Gelegenheit, sei es auf der Cocktailplatte oder beim Käsedessert.
+    appenzeller:
+        seo:
+            description: Ein milder, würziger Käse aus dem Herzen der Schweiz
+        nom: Appenzeller AOP 
+        maturation: 3 bis 6 Monate
+        slogan: Ein milder, würziger Käse aus dem Herzen der Schweiz
+        header: |
+            Der Appenzeller verdankt seinen Namen der Region, in der er hergestellt wird: Das Appenzellerland. Die wunderschöne, bergige Gegend im Nordosten der Schweiz verfügt über ein reiches Brauchtum. Bis heute gehören Volksmusik, traditionelle Tänze und der feierliche Almabtrieb am Ende des Sommers zu den schönen Bräuchen, die sich in diesem Kanton erhalten haben und weiter gepflegt werden.
+        p0: |
+            Die fruchtbaren Kräuterwiesen geben dem Appenzeller seinen einzigartigen Geschmack. Der Käse wird regelmässig mit einer aromatischen Kräuterlake gewaschen, deren genaue Zutaten streng geheim sind und ausschliesslich von Generation zu Generation weitergegeben werden.
+        p1: |
+            Der Appenzeller wird seit über 700 Jahren im Appenzellerland produziert und ist aus gutem Grund eine der beliebtesten Käsesorten in der Schweiz. Eine wunderbare Bereicherung für jede Käseplatte: Feinschmecker werden den milden, würzigen Käse zu schätzen wissen. Durch sein köstliches, zartes Kräuteraroma eignet sich der Appenzeller perfekt zum Kochen, zumal er auch gut schmilzt. 
+        p2: |
+            Appenzeller kann als einfaches Dessert serviert werden und ist der ideale Begleiter zu knackigem, säuerlichem Obst wie Äpfeln.
+    vacherinfribourgeois:
+        seo:
+            description: Ein duftender Käse, mit handwerklicher Sorgfalt hergestellt
+        nom: Vacherin Fribourgeois AOP
+        slogan: Ein duftender Käse, mit handwerklicher Sorgfalt hergestellt
+        maturation: 3 Monat
+        header: |
+            Als echt regionales Produkt ist der Vacherin Fribourgeois AOP (Freiburger Vacherin) ein zarter Anklang an den Blütenduft am Fusse der Alpen und im Schweizer Mittelland. 
+        p0: |
+            Der sehr vielseitige Vacherin Fribourgeois AOP kann kalt oder warm verzehrt werden. Er ist eine Hauptzutat des köstlichen Moite-Moite Käsefondues und verleiht diesem eine dicke, cremige Textur sowie einen angenehmen Geschmack. Der Teig des Vacherin Fribourgeois AOP variiert von halbfest bis fein und besteht aus Rohmilch oder wärmebehandelter Milch. Die Reifezeit reicht von neun Wochen bis hin zu mehreren Monaten. 
+        p1: |
+            Der Vacherin Fribourgeois AOP wird von handwerklichen Käsern im Kanton Fribourg hergestellt, die für ihre Kunst der Käseherstellung und die Liebe zu ihrem Beruf bekannt sind. Nach der Behandlung der köstlich duftenden Kuhmilch, die täglich in die Käserei geliefert wird, stellen die Fachleute den Käse nach überliefertem, geschütztem Rezept aus den Rohzutaten her. 
+        p2: |
+            Der Vacherin Fribourgeois AOP ist führend unter den Käsespezialitäten dank seines extrem raffinierten, angenehm duftenden Aromas und seiner hervorragenden Schmelzeigenschaften. Dieses Produkt ist die erste Wahl für Käseliebhaber und verleiht jeder hochkarätigen Käseplatte das gewisse Etwas. 
+    gottardo:
+        seo:
+            description: Der Gottardo ist ein typischer Käse aus dem Tessin: Weich und milchig, seine hübsche graue Rinde ist das klassische Merkmal der Käsesorten aus dieser Region. 
+        nom: Gottardo
+        maturation: 3 bis 5 Monate
+        slogan: Der Geschmack der Berge
+        header: |
+            Der Gottardo ist ein typischer Käse aus dem Tessin: Weich und milchig, seine hübsche graue Rinde ist das klassische Merkmal der Käsesorten aus dieser Region. Der Gottardo erhielt seinen Namen vom Gotthard-Pass, einer historisch wichtigen Bergpassage im Herzen Europas, welche die nördliche Schweiz mit dem Tessin, der italienischsprachigen, südlichen Schweiz verbindet und Teil des Wegs nach Mailand ist.
+        p0: |
+            Hergestellt aus bester Milch aus dem Leventina-Bergtal, wo die Granitgipfel den blauen Himmel berühren, steht dieser Käse für die Landschaft, aus der er stammt: Mild wie die Luft der Berge. Der halbfeste, cremige Teig des Gottardo wird von erfahrenen Käsern auf den Almen der Region hergestellt. Der Käse reift dann mindestens zwei und bis zu fünf Monate in Höhlen, deren Natureigenschaften dem Reifungsprozess eine geschmackliche Tiefe hinzufügen. Servieren Sie ihn als Snack für zwischendurch oder als leckere Ergänzung auf einer Gourmet-Käseplatte. Die modern-kunstvolle Verpackung macht den Gottardo darüber hinaus zum Blickfang einer jeden Käsetheke.
+
+theReceipts:
+    seo:
+        description: Lernen Sie einige einfache Originalrezepte kennen, in denen sich unsere Käsesorten klassisch präsentieren. 
+    title: The Receipts
+    header: |
+        Lernen Sie einige einfache Originalrezepte kennen, in denen sich unsere Käsesorten klassisch präsentieren. Ob als Canapés oder Vorspeise, als Dessert oder fantastischer Hauptgang: mit diesem Käse erhalten Ihre Gerichte eine besondere Note. Einfach köstlich!
+    ideas:
+        title: |
+            Rezeptideen für vielfältige 
+            Geschmackserlebnisse.
+    commingSoon: Comming soon
+
+theContact:
+    seo: 
+        description: © HEIDI Alpen | ELSA-MIFROMA-GRUPPE · ROUTE DE PAYERNE 2–4 · 1470 ESTAVAYER-LE-LAC · SCHWEIZ · TEL. +41 (0)26 664 91 11
+    title: Kontakt
+    header: |
+        Wir freuen uns über eine Nachricht von Ihnen. 
+        Bitte nutzen Sie das folgende Formular 
+        für Ihre Kommentare, Anfragen oder Vorschläge.
+
+form:
+    contact:
+        salutation: 'Titel *'
+        choice:
+            m: Herr
+            mlle: Frau
+            mme: Frau
+            pi: "Produktinformation"
+            pr: "Medien und PR"
+            ot: "Sonstiges"
+        firstname: 'Vorname *'
+        lastname: 'Nachname *'
+        subject: 'Betreff *'
+        email: 'E-Mail *'
+        country: 'Land *'
+        message: 'Nachricht *'
+    required:
+        general: |
+            Es fehlen noch Angaben.
+            Bitte beachten Sie die nachstehenden Informationen.
+        salutation: "Bitte wählen Sie Ihre Anrede"
+        firstname: 'Bitte tragen Sie Ihren Vornamen ein'
+        lastname: 'Bitte tragen Sie Ihren Nachnamen ein'
+        email: 'Bitte tragen Sie Ihre E-Mail-Adresse ein'
+        email_invalid: 'Dies ist keine gültige E-Mail-Adresse. Bitte wiederholen Sie die Eingabe.'
+        country: "Bitte tragen Sie Ihr Land ein"
+        message: 'Bitte tragen Sie Ihre Nachricht ein'
+    submit: Senden
+
+mail:
+    salutation: 'Mit freundlichen Grüssen,'
+    contact:
+        flash:
+            success: 'Vielen Dank für Ihre Nachricht'
+        message: 'Vielen Dank für Ihr Interesse. Wir haben Ihre Nachricht erhalten und antworten so bald wie möglich.'
+        subject: 'Ihre Nachricht'
+        title: 'HEIDI Alpen | Bestätigung'
+
+    admin:
+        title: "Kontakt über Internetformular"

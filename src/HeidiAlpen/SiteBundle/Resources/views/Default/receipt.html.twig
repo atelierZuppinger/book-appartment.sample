@@ -1,0 +1,85 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theReceipts.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theReceipts.seo.description'|trans }}{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/recette.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/print.css') }}" media="print" />
+{% endblock %}
+
+
+{% block body_class %}page-receipt{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+  <div class="center-content fullColor intro">
+    <h1>
+      {{ 'theReceipts.title'|trans }}
+    </h1>
+    <p>
+      <b>
+        {{ 'theReceipts.header'|trans|nl2br }}
+      </b>
+    </p>
+  </div>
+  
+  <section>
+    <div class="center-content fullColor">
+      <figure>
+        <img src="{{ asset('imgs/receipts/8996.jpg') }}" />
+      </figure>
+      <h2>
+        Nom de la recette
+      </h2>
+      <button class="button print">Print this receipt</button>
+      <div id="specs">
+        <ul>
+          Difficulté
+          <li>Facile</li>
+        </ul>
+        <ul>
+          Temps de préparation
+          <li>25 minutes</li>
+        </ul>
+        <ul>
+          Ingrédients
+          <li>Lorem</li>
+          <li>Ipsun</li>
+          <li>Lorem</li>
+          <li>Ipsun</li>
+        </ul>
+      </div>
+      <div id="description">
+        <p>
+          Produced for centuries around the small town of Gruyère in French-speaking Switzerland, for generations this cheese has been made in village dairies according to an original, traditional recipe. With its salty flavour, the Gruyère AOP is a treat for those who love characterful cheeses. 
+          <br />
+          This superior-quality cheese owes its unique character to specific production methods which, in line with the rigorous AOP label, remain true to the original recipe, and respect age-old traditions. Gruyère AOP is prepared from the finest raw milk from cows fed on grass during the summer and hay during the winter. The use of any additives is prohibited.
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div>
+    <div class="center-content">
+      <div id="relatedLinks">
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-cheeses.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-aop.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-expertise-methods.html.twig' %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="clear"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/receipt.js') }}"></script>
+{% endblock %}

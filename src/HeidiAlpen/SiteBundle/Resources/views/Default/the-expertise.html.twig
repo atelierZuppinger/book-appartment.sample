@@ -1,0 +1,53 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theExpertise.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theExpertise.seo.description'|trans }}{% endblock %}
+
+{% block body_class %}page-expertise {% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_expert_02.jpg') }}" alt="{{ 'theExpertise.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_expert_02.jpg') }}" alt="{{ 'theExpertise.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+  <div class="center-content fullColor intro">
+    <h1>
+      {{ 'theExpertise.title'|trans }}
+    </h1>
+    <p>
+      <b>
+        {{ 'theExpertise.header'|trans }}
+      </b>
+    </p>
+  </div>
+
+  <section id="methods">
+    <div class="center-content fullColor">
+      <img class="fullImg" src="{{ asset('imgs/heidi_visuel_expert.jpg') }}" alt="{{ 'theExpertise.methods.h1'|trans }}" />
+      <h2>
+        {{ 'theExpertise.methods.title'|trans|nl2br }}
+      </h2>
+      <p>
+        {{ 'theExpertise.methods.p0'|trans|nl2br }}
+      </p>
+    </div>
+  </section>
+  
+  <div>
+    <div class="center-content">
+      <div id="relatedLinks">
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-cheeses.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-aop.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-land.html.twig' %}
+      </div>
+    </div>
+  </div>
+
+  <span class="clear"></span>
+  
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+{% endblock %}

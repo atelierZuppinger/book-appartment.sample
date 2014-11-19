@@ -1,0 +1,84 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theContact.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theContact.seo.description'|trans() }}{% endblock %}
+
+{% block body_class %}contact-page{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_home_01.jpg') }}" alt="{{ 'theContact.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_home_01.jpg') }}" alt="{{ 'theContact.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+    <div class="center-content fullColor intro" id="contact-page">
+        <h1 class="centered">{{ 'theContact.title'|trans }}</h1>
+        <p>
+            <strong>
+                {{ 'theContact.header'|trans|nl2br }}
+            </strong>
+        </p>
+    </div>
+    <section>
+        <div class="center-content fullColor">
+            {% if app.session.flashbag.has('notice')|length > 0 %}
+                <div class="notification p">
+                {% for flashMessage in app.session.flashbag.get('notice') %}
+                    {{ flashMessage|nl2br }}
+                {% endfor %}
+                </div>
+            {% endif %}
+            {% if not submitted %}
+    			{% if not form.vars.valid %}
+                    <div class="notification p">
+                        {{ 'form.required.general'|trans()|nl2br }}
+                    </div>
+                {% endif %}
+    			{{ form_start(form, {'attr': {'id': 'contact', 'class': 'form'}}) }}
+        			{{ form_errors(form) }}
+        			<div class="line">
+                        {{ form_errors(form.salutation) }}
+                        {{ form_widget(form.salutation, {'attr': {'id': 'salutation'}}) }}
+                        <div class="clear"></div>
+                    </div>
+        			<div class="line">
+                        {{ form_errors(form.firstname) }}
+                        {{ form_widget(form.firstname, {'attr': {'id': 'firstName', 'class': 'half'}}) }}
+                        {{ form_errors(form.lastname) }}
+                        {{ form_widget(form.lastname, {'attr': {'id': 'lastName', 'class': 'half'}}) }}
+                        <div class="clear"></div>
+                    </div>
+                    <div class="line">
+                        {{ form_errors(form.country) }}
+                        {{ form_widget(form.country, {'attr': {'id': 'country'}}) }}
+                        <div class="clear"></div>
+                    </div> 
+                    <div class="line">
+                        {{ form_errors(form.email) }}
+                        {{ form_widget(form.email, {'attr': {'id': 'email'}}) }}
+                        <div class="clear"></div>
+                    </div>
+        			<div class="line">
+                        {{ form_errors(form.message) }}
+                        {{ form_widget(form.message, {'attr': {'id': 'contact_message'}}) }}
+                        <div class="clear"></div>
+                    </div>
+                    <div class="line gutterTop centerText">
+                        {{ form_widget(form.submit, {'attr': {'id': 'submitBtn', 'class': 'button', 'formnovalidate':true}}) }}
+                        <div class="clear"></div>
+    				</div>
+                    <div class="clear"></div>
+    			{{ form_end(form) }}
+            {% endif %}
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/placeholder.js') }}"></script>
+    <!--[if IE]>
+        <script src="{{ asset('js/form.placeholder.js') }}"></script>
+        <script src="{{ asset('js/contact.js') }}"></script>
+    <![endif]-->
+{% endblock %}

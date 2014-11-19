@@ -1,0 +1,36 @@
+heidi_alpen_homepage:
+    pattern:  /
+    defaults:
+        _controller: HeidiAlpenSiteBundle:Default:index 
+heidi_alpen_the_story:
+    pattern: /the-story
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:theStory }
+heidi_alpen_the_expertise:
+    pattern: /the-expertise
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:theExpertise }
+heidi_alpen_the_cheeses:
+    pattern: /the-cheeses
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:theCheeses }
+heidi_alpen_the_cheeses_cheese:
+    pattern: /the-cheeses/{cheese}
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:theCheesesCheese }
+heidi_alpen_the_cheeses_cheese_ajax:
+    pattern: /ajax/the-cheeses/{cheese}
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:theCheesesCheeseAjax }
+heidi_alpen_receipts:
+    pattern: /receipts
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:receipts }
+heidi_alpen_receipt:
+    pattern: /receipts/{receipt}
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:receipt }
+heidi_alpen_contact:
+    pattern: /contact
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:contact }
+heidi_alpen_mail:
+    pattern: /mail/{template}
+    defaults:
+        _controller: HeidiAlpenSiteBundle:Default:mail 
+        template: contact
+heidi_alpen_files:
+    pattern: /files
+    defaults: { _controller: HeidiAlpenSiteBundle:Default:files }

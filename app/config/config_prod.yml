@@ -1,0 +1,33 @@
+imports:
+    - { resource: config.yml }
+
+#framework:
+#    validation:
+#        cache: apc
+
+#doctrine:
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: error
+            handler:      nested
+        nested:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+
+#jms_i18n_routing:
+#    default_locale: %locale%
+#    locales: [en, ru, ja]
+#    strategy: custom
+#    hosts:
+#        en: heidi-alpen.ch
+#        ru: heidi-alpen.ru
+#        ja: heidi-alpen.jp
+#    redirect_to_host: true

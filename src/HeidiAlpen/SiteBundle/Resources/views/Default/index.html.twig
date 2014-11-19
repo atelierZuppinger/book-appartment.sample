@@ -1,0 +1,44 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theIndex.seo.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theIndex.seo.description'|trans }}{% endblock %}
+
+{% block body_class %}page-index{% endblock %}
+
+{% block after_header %}
+    {#
+    <div class="center-content" id="goToMap">
+        <a href="{{ path('heidi_alpen_the_cheeses') }}">
+            <h1>Switzerland’s <br />
+                finest cheeses.
+            </h1>
+            <h2>
+                Discover the legend.
+            </h2>
+            <img src="{{ asset('imgs/home_swiss_cheesemap.png') }}" alt="Swiss cheese map" />
+        </a>
+    </div>
+    #}
+{% endblock %}
+
+{% block main %}
+    <div id="relatedLinks">
+        <div class="center-content">
+            {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-land.html.twig' %}
+            {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-expertise-methods.html.twig' %}
+            {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-cheeses.html.twig' %}
+            <div class="clear"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block indexH1and2 %}
+    <h1 id="indexH1">
+        HEIDI-Alpen
+    </h1>
+    <h2 id="slogan">{{ 'global.footer.slogan'|trans }}</h2>
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+{% endblock %}

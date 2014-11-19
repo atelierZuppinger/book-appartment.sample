@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: 8889
+    database_name: sportshouse-sf
+    database_user: root
+    database_password: root
+    mailer_transport: mail
+    mailer_encryption: null
+    mailer_auth_mode: login
+    mailer_host: smtp.gmail.com
+    mailer_port: 465
+    mailer_user: yassin.paparelli
+    mailer_password: wutang36()
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt

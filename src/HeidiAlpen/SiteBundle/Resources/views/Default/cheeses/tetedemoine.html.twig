@@ -1,0 +1,36 @@
+<article class="tetedemoine">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgTetedemoine imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_tetdemoine.png') }}" alt="{{ 'theCheeses.tetedemoine.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_tm.png') }}" alt="{{ 'theCheeses.tetedemoine.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_tm.png') }}" alt="trait" />
+    </figure>
+  </div>
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.tetedemoine.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.tetedemoine.slogan'|trans }}</h2>
+  {#<img class="packaging" src="{{ asset('imgs/heidi_pack_tetedemoine.png') }}" alt="{{ 'theCheeses.tetedemoine.nom'|trans }}" />#}
+  <p>
+    <b>{{ 'theCheeses.tetedemoine.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.tetedemoine.p0'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.tetedemoine.p1'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.tetedemoine.p2'|trans }}
+  </p>
+  <p>
+    {% if app.request.getLocale() == 'ru' %}
+      <strong>
+        * Тет-де-Муан с официальным сертификатом контроля подлинности происхождения<br />
+        {{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.tetedemoine.maturation'|trans }}
+      </strong>
+    {% else %}
+      <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.tetedemoine.maturation'|trans }}</strong>
+    {% endif %}
+  </p>
+</article>

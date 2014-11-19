@@ -1,0 +1,27 @@
+{% extends "HeidiAlpenSiteBundle:Mail:layout-mail.html.twig" %}
+
+{% block title %}{{ 'mail.admin.title'|trans() }}{% endblock %}
+
+{% block header %}
+
+<p style="font-family: Arial, sans-serif;font-size: 16px;line-height: 21px;margin-top: 0;color: #333333;margin-bottom: 12px;text-align:left;">
+	Un message vous a été envoyé via le formulaire de contact par:
+</p>
+<p style="font-family: Arial, sans-serif;font-size: 15px;line-height: 20px;margin-top: 0;color: #333333;margin-bottom: 28px;text-align:left;">
+Prénom: <b>{{ data.firstname }}</b><br />
+Nom: <b>{{ data.lastname }}</b><br />
+Email: <b>{{ data.email }}</b><br />
+Langue de communication: <b>{{ app.request.preferredLanguage }}</b><br />
+Pays: <b>{{ data.country }}</b><br />
+</p>
+
+{% endblock %}
+
+{% block body %}
+<p style="font-family: Arial, sans-serif;font-size: 16px;line-height: 21px;margin-top: 0;color: #333333;margin-bottom: 12px;text-align:left;">
+Message:
+</p>
+<p style="font-family: Arial, sans-serif;font-size: 15px;line-height: 20px;margin-top: 0;color: #333333;margin-bottom: 28px;text-align:left; padding:12px; border:1px solid #888;">
+<i>{{ data.message|nl2br }}</i>
+</p>
+{% endblock %}

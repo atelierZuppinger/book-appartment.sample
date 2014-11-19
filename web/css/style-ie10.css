@@ -1,0 +1,8 @@
+.ie10 header #photoGallery #legends span {
+  margin-left: 29% !important;
+}
+@media screen and (max-width: 900px) {
+  .ie10.page-temporaire header #photoGallery #legends .center-content span.current {
+    margin-left: auto !important;
+  }
+}

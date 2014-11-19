@@ -1,0 +1,54 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theStory.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theStory.seo.description'|trans }}{% endblock %}
+
+{% block body_class %}page-login{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+    <div class="center-content fullColor intro">
+        <h1>Login</h1>
+        <div class="connection">
+            <form action="{{ path("sonata_user_admin_security_check") }}" method="post" class="form">
+
+                {% if error %}
+                    <div class="alert alert-error">{{ error|trans({}, 'SonataUserBundle') }}</div>
+                {% endif %}
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                <div class="line">
+                    <input placeholder="{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}" type="text" id="username" name="_username" value="{{ last_username }}" class="big sonata-medium"/>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="line">
+                    <input placeholder="{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}" type="password" id="password" name="_password" class="big sonata-medium" />
+                    <div class="clear"></div>
+                </div>
+
+                <div class="line checkbox">
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                    <div>
+                        <label for="remember_me">
+                            {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+                        </label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="line form-actions centerText">
+                    <input type="submit" class="btn btn-primary button" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

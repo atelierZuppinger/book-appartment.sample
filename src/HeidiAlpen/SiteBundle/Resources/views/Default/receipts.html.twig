@@ -1,0 +1,102 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theReceipts.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theReceipts.seo.description'|trans }}{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/recette.css') }}" />
+{% endblock %}
+
+
+{% block body_class %}page-receipts{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+  <div class="center-content fullColor intro">
+    <h1>
+      {{ 'theReceipts.title'|trans }}
+    </h1>
+    <p>
+      <b>
+        {{ 'theReceipts.header'|trans|nl2br }}
+      </b>
+    </p>
+  </div>
+  
+  <section>
+    <div class="center-content fullColor">
+      <h2>
+        {{ 'theReceipts.ideas.title'|trans }}
+      </h2>
+      <div>
+        <a class="receiptLink medium" href="{{ path('heidi_alpen_receipt', { receipt: receipts.0.slug }) }}">
+          <figure>
+            <img class="img" src="{{ asset('imgs/receipts/' ~ receipts.0.img) }}" alt="{{ receipts.0.slug }}" />
+            <img class="caliber" src="{{ asset('imgs/receipts/caliber-medium.gif') }}" alt="caliber" />
+            <figcaption>
+              {{ 'theReceipts.taste'|trans }}
+            </figcaption>
+          </figure>
+        </a>
+        <a class="receiptLink small" href="{{ path('heidi_alpen_receipt', { receipt: receipts.1.slug }) }}">
+          <figure>
+            <img class="img" src="{{ asset('imgs/receipts/' ~ receipts.1.img) }}" alt="{{ receipts.1.slug }}" />
+            <img class="caliber" src="{{ asset('imgs/receipts/caliber-small.gif') }}" alt="caliber" />
+            <figcaption>
+              {{ 'theReceipts.taste'|trans }}
+            </figcaption>
+          </figure>
+        </a>
+        <a class="receiptLink large" href="{{ path('heidi_alpen_receipt', { receipt: receipts.2.slug }) }}">
+          <figure>
+            <img class="img" src="{{ asset('imgs/receipts/' ~ receipts.2.img) }}" alt="{{ receipts.2.slug }}" />
+            <img class="caliber" src="{{ asset('imgs/receipts/caliber-large.gif') }}" alt="caliber" />
+            <figcaption>
+              {{ 'theReceipts.taste'|trans }}
+            </figcaption>
+          </figure>
+        </a>
+        <a class="receiptLink small" href="{{ path('heidi_alpen_receipt', { receipt: receipts.3.slug }) }}">
+          <figure>
+            <img class="img" src="{{ asset('imgs/receipts/' ~ receipts.3.img) }}" alt="{{ receipts.3.slug }}" />
+            <img class="caliber" src="{{ asset('imgs/receipts/caliber-small.gif') }}" alt="caliber" />
+            <figcaption>
+              {{ 'theReceipts.taste'|trans }}
+            </figcaption>
+          </figure>
+        </a>
+        <a class="receiptLink medium" href="{{ path('heidi_alpen_receipt', { receipt: receipts.4.slug }) }}">
+          <figure>
+            <img class="img" src="{{ asset('imgs/receipts/' ~ receipts.4.img) }}" alt="{{ receipts.4.slug }}" />
+            <img class="caliber" src="{{ asset('imgs/receipts/caliber-medium.gif') }}" alt="caliber" />
+            <figcaption>
+              {{ 'theReceipts.taste'|trans }}
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div>
+    <div class="center-content">
+      <div id="relatedLinks">
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-cheeses.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-aop.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-expertise-methods.html.twig' %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="clear"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+{% endblock %}

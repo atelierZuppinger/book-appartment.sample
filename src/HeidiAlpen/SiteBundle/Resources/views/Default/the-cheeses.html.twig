@@ -1,0 +1,141 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ selectedCheese is defined ? title : 'theCheeses.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ selectedCheese is defined ? description : 'theCheeses.seo.description'|trans }}{% endblock %}
+
+{% block stylesheets %}
+  <link type="text/css" rel="stylesheet" href="{{ asset('css/map.css') }}">
+{% endblock %}
+
+{% block body_class %}{{ selectedCheese is defined ? 'page-cheeses page-cheese' : 'page-cheeses' }}{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+  <div class="center-content fullColor intro">
+    <h1>
+      {{ 'theCheeses.title'|trans }}
+    </h1>
+    <p>
+      <b>
+        {{ 'theCheeses.header'|trans|nl2br }}
+      </b>
+    </p>
+    <img class="center" src="{{ asset('imgs/the_cheeses_packaging.png') }}" alt="Packaging" />
+  </div>
+
+  <section class="fullColorBlue fullBorder">
+    <div class="center-content">
+      <div id="cheeseMap" class="{% if selectedCheese is defined %}showCheese {{selectedCheese}}{% endif %}">
+        <h2>
+          {{ 'theCheeses.discover.title'|trans }}
+        </h2>
+        <figure id="map">
+          <figcaption>
+            {% if app.request.getLocale() == 'en' or app.request.getLocale() == 'de' %}
+              <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'appenzeller' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'appenzeller' }) }}" id="appenzeller">
+                <figure>
+                  <figcaption>
+                    {{ 'theCheeses.appenzeller.nom'|trans }}
+                  </figcaption>
+                  <img src="{{ asset('imgs/from_ap.png') }}" alt="{{ 'theCheeses.appenzeller.nom'|trans }}" />
+                </figure>
+              </a>
+              <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'gottardo' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'gottardo' }) }}" id="gottardo" class="bottomLegend">
+                <figure>
+                  <figcaption>
+                    {{ 'theCheeses.gottardo.nom'|trans }}
+                  </figcaption>
+                  <img src="{{ asset('imgs/from_go.png') }}" alt="{{ 'theCheeses.gottardo.nom'|trans }}" />
+                </figure>
+              </a>
+                <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'vacherinfribourgeois' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'vacherinfribourgeois' }) }}" id="vacherinfribourgeois" class="bottomLegend">
+                  <figure>
+                   <figcaption>
+                    {{ 'theCheeses.vacherinfribourgeois.nom'|trans }}
+                   </figcaption>
+                  <img src="{{ asset('imgs/from_va.png') }}" alt="{{ 'theCheeses.vacherinfribourgeois.nom'|trans }}" />
+                 </figure>
+               </a>
+            {% endif %}
+            <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'emmentaler' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'emmentaler' }) }}" id="emmentaler">
+              <figure>
+                <figcaption>
+                  {{ 'theCheeses.emmentaler.nom'|trans }}
+                </figcaption>
+                <img src="{{ asset('imgs/from_em.png') }}" alt="{{ 'theCheeses.emmentaler.nom'|trans }}" />
+              </figure>
+            </a>
+            <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'sbrinz' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'sbrinz' }) }}" id="sbrinz">
+              <figure>
+                <figcaption>
+                  {{ 'theCheeses.sbrinz.nom'|trans }}
+                </figcaption>
+                <img src="{{ asset('imgs/from_sb.png') }}" alt="{{ 'theCheeses.sbrinz.nom'|trans }}" />
+              </figure>
+            </a>
+            <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'gruyere' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'gruyere' }) }}" id="gruyere">
+              <figure>
+                <figcaption>
+                  {{ 'theCheeses.gruyere.nom'|trans }}
+                </figcaption>
+                <img src="{{ asset('imgs/from_gr.png') }}" alt="{{ 'theCheeses.gruyere.nom'|trans }}" />
+              </figure>
+            </a>
+            {% if app.request.getLocale() != 'ja' %}
+              <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'edelsuisse' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'edelsuisse' }) }}" id="edelsuisse" class="bottomLegend">
+                <figure>
+                  <figcaption>
+                    {{ 'theCheeses.edelsuisse.nom'|trans }}
+                  </figcaption>
+                  <img src="{{ asset('imgs/from_ed.png') }}" alt="{{ 'theCheeses.edelsuisse.nom'|trans }}" />
+                </figure>
+              </a>
+              <a href="{{ path('heidi_alpen_the_cheeses_cheese', { cheese: 'tetedemoine' }) }}" data-href="{{ path('heidi_alpen_the_cheeses_cheese_ajax', { cheese: 'tetedemoine' }) }}" id="tetedemoine">
+                <figure>
+                  <figcaption>
+                    {{ 'theCheeses.tetedemoine.nom'|trans }}
+                  </figcaption>
+                  <img src="{{ asset('imgs/from_tm.png') }}" alt="{{ 'theCheeses.tetedemoine.nom'|trans }}" />
+                </figure>
+              </a>
+            {% endif %}
+            </figcaption>
+          <img src="{{ asset('imgs/heidi_map.png') }}" alt="{{ 'theCheeses.title'|trans }}" />
+        </figure>
+        <div id="cheeseDetails">
+          {% if selectedCheese is defined %}
+            {% include 'HeidiAlpenSiteBundle:Default:cheeses/' ~ selectedCheese ~ '.html.twig' %}
+          {% endif %}
+        </div>
+        <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+      </div>
+      <span class="clear"></span>
+
+    </div>
+  </section>
+  <div>
+    <div class="center-content">
+      <div id="relatedLinks">
+          {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-expertise-methods.html.twig' %}
+          {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-aop.html.twig' %}
+          {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-story-land.html.twig' %}
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+{% endblock %}
+
+{% block javascripts %}
+  
+  <script type="text/javascript" src="{{ asset('js/mootools-class-extras.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/History.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/History.handleInitialState.js') }}"></script>
+
+  <script type="text/javascript" src="{{ asset('js/mootools-more-1.5.1.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/map.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+{% endblock %}

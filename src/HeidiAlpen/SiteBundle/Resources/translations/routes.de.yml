@@ -1,0 +1,8 @@
+heidi_alpen_homepage: /
+heidi_alpen_the_story: /the-story
+heidi_alpen_the_expertise: /the-expertise
+heidi_alpen_the_cheeses: /the-cheeses
+heidi_alpen_the_cheeses_cheese: /the-cheeses/{cheese}
+heidi_alpen_the_cheeses_cheese_ajax: /ajax/the-cheeses/{cheese}
+heidi_alpen_receipts: /receipts
+heidi_alpen_recept: /receipts/receipt-1

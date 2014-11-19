@@ -1,0 +1,143 @@
+// LESS CSS
+
+@whiteOpacity20: url(../imgs/whiteOpacity20.png);
+@whiteOpacity50: url(../imgs/whiteOpacity50.png);
+@whiteOpacity80: url(../imgs/whiteOpacity80.png);
+@turquoiseOpacity10: url(../imgs/turquoiseOpacity10.png);
+
+.linkBox() {
+    background: @whiteOpacity80;
+}
+
+.fullColor {
+    background: @whiteOpacity80;
+}
+.fullColorBlue {
+    background: @turquoiseOpacity10;
+}
+
+.form {
+    .line {
+        select,
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        textarea {
+            background-color: #f2f2f2;
+        }
+    }
+}
+
+header {
+    #topMenu {
+        li {
+            strong {
+                background: @whiteOpacity20;
+            }
+            .subMenu {
+                background: @whiteOpacity20;
+            }
+        }
+    }
+    
+    #photoGallery {
+        ul {
+            li {
+                visibility: hidden;
+                &.current {
+                    visibility: visible;
+                }
+            }
+        }
+        menu {
+            button {
+                background: url(../imgs/circle.png);
+                 &.current {
+                	background: url(../imgs/circle-selected.png);
+                }
+            }
+        }
+        #legends {
+            span {
+                background: @whiteOpacity80;
+                margin-left: 50% - 21% !important;
+            }
+        }
+    }
+
+    #mainNav {
+        background: @whiteOpacity80;
+    }
+}
+
+main {
+    #relatedLinks {
+        a {
+            &:hover {
+                figure {
+                    img {
+                        filter: alpha(opacity=80);
+                    }
+                }
+            }
+            figure {
+                figcaption {
+                    
+                }
+            }
+        }
+    }
+    
+}
+
+.page-index {
+    #relatedLinks {
+        a {
+            &:hover {
+                figure {
+                    img {
+                        filter: alpha(opacity=80);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#cheeseMap {
+    &.showCheese {
+        #map {
+            a {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+footer {
+    #endOfPagae {
+        section {
+            a {
+                &.strong {
+                	background: @whiteOpacity20;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .page-temporaire {
+        header {
+            #photoGallery {
+                #legends {
+                    .center-content {
+                        span.current {
+                            margin-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{% extends "HeidiAlpenSiteBundle:Mail:layout-mail.html.twig" %}
+
+{% block title %}{{ 'mail.contact.title'|trans() }}{% endblock %}
+
+{% block header %}
+<p style="font-family: Arial, sans-serif;font-size: 16px;line-height: 21px;margin-top: 0;color: #333333;margin-bottom: 28px;text-align:center;">
+	{{ 'mail.contact.message'|trans() }}
+</p>
+{% endblock %}
+
+{% block body %}
+<p style="font-family: Arial, sans-serif;font-size: 16px;line-height: 21px;margin-top: 0;color: #333333;margin-bottom: 28px;text-align:center;">
+	{{ 'mail.salutation'|trans() }}
+</p>
+{% endblock %}

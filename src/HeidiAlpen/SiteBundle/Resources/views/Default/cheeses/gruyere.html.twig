@@ -1,0 +1,36 @@
+<article class="gruyere">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgGruyere imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_gru.png') }}" alt="{{ 'theCheeses.gruyere.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_gr.png') }}" alt="{{ 'theCheeses.gruyere.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_gr.png') }}" alt="trait" />
+    </figure>
+  </div>
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.gruyere.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.gruyere.slogan'|trans }}</h2>
+  <img class="packaging" src="{{ app.request.getLocale() == 'ja' ? asset('imgs/heidi_pack-Gru_jp.png') : asset('imgs/heidi_pack_gruyere.png') }}" alt="{{ 'theCheeses.gruyere.nom'|trans }}" />
+  <p>
+    <b>{{ 'theCheeses.gruyere.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.gruyere.p0'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.gruyere.p1'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.gruyere.p2'|trans }}
+  </p>
+  <p>
+    {% if app.request.getLocale() == 'ru' %}
+      <strong>
+        * Грюйер с официальным сертификатом контроля подлинности происхождения<br />
+        {{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.gruyere.maturation'|trans }}
+      </strong>
+    {% else %}
+      <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.gruyere.maturation'|trans }}</strong>
+    {% endif %}
+  </p>
+</article>

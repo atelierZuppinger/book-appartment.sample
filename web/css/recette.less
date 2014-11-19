@@ -1,0 +1,95 @@
+@import 'fn.less';
+@import 'var.less';
+
+.page-receipts {
+    .receiptLink {
+        @figcaptionWidth: 15%;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        float: left;
+        margin-bottom: @margin+2;
+        .linkBox2();
+        img {
+            margin-bottom: 0;
+        }
+        .img {
+            width: 100%;
+            position: absolute;
+        }
+        figcaption {
+            bottom: @margin*1.5;
+            width: @figcaptionWidth;
+            //left: 50%;
+            //margin-left: -15%;
+            text-transform: none;
+            .h3();
+            font-family: @italic;
+            left: @margin;
+            top: @margin;
+            bottom: auto;
+            margin-top: 0;
+        }
+        &.small {
+            @width: 42.028395%;
+            width: @width;
+            img {
+                width: 135%;
+                margin-left: -17.5%;
+            }
+            figcaption {
+                width: @figcaptionWidth*100/@width;
+                //margin-left: -15*100/@width;
+            }
+        }
+        &.medium {
+            @width: 56.2962962962963%;
+            width: @width;
+            figcaption {
+                width: @figcaptionWidth*100/@width;
+                //margin-left: -15*100/@width;
+            }
+        }
+        &.large {
+            img {
+                margin-top: -9%;
+            }
+        }
+        &:nth-child(4),
+        &:first-child {
+            margin-right: 1.68%;
+        }
+        &:hover {
+            figcaption {
+                display: block;
+            }
+        }
+    }
+}
+.page-receipt {
+    #specs, #description {
+        position: relative;
+        float: left;
+        .col(14, @gutter, 10);
+        .span(14, @gutter, 2);
+    }
+    #specs {
+        text-align: center;
+        margin-bottom: @margin;
+        ul {
+            margin-bottom: @margin;
+            font-family: @light;
+            li {
+                font-family: @italic;
+                &:first-child {
+                    margin-top: @margin/2;
+                }
+            }
+        }
+    }
+    .button {
+        margin: 0 auto;
+        margin-bottom: @margin;
+        display: block;
+    }
+}

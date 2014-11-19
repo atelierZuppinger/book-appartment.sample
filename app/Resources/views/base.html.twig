@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {#<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">#}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>{% block title %}HEIDI-Alpen{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="keywords" content="{{ 'theStory.land.title'|trans }} {{ 'theStory.aop.title'|trans }} {{ 'theCheeses.title'|trans }} {{ 'theCheeses.discover.title'|trans }}">
+    
+    <meta name="author" content="ELSA-Mifroma">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <script type="text/javascript" src="{{ asset('js/modernizr.js') }}"></script>
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/edc7adc9-e645-4297-87b2-c294eff31c91.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
+    {# favicon #}
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('apple-touch-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('apple-touch-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('favicon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="150x160" href="{{ asset('favicon-160x160.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png')}}">
+    <meta name="msapplication-TileColor" content="#e9c16b">
+    <meta name="msapplication-TileImage" content="{{ asset('mstile-144x144.png') }}">
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie9.css" type="text/css" media="screen">
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="{{ asset('css/style-ie.css') }}" type="text/css">
+    <![endif]-->
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset('css/mobile.css') }}" type="text/css">
+  </head>
+  <body class="lang-{{ app.request.getLocale() }} {% block body_class %}{% endblock %}">
+
+    <header>
+
+      <aside id="photoGallery" class="ambiancePicture">
+        {% block ambiance_picture %}
+          <ul id="galleryImages">
+            <li class="current">
+              <figure>
+                <img src="{{ asset('imgs/heidi_fond_home_01.jpg') }}" alt="HEIDI-Alpen" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="{{ asset('imgs/heidi_fond_home_04.jpg') }}" alt="HEIDI-Alpen" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="{{ asset('imgs/heidi_fond_expert_02.jpg') }}" alt="{{ 'theExpertise.title'|trans }}" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="{{ asset('imgs/heidi_fond_cheese_01.jpg') }}" alt="{{ 'theCheeses.title'|trans }}" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" />
+              </figure>
+            </li>
+          </ul>
+          <menu>
+            <button class="current" value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+          </menu>
+
+          {#<div id="legends">
+            <div class="center-content">
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+              <span>
+                Switzerland’s finest cheeses.<br />
+                Discover the legend, soon!
+              </span>
+            </div>
+          </div>#}
+        {% endblock %}
+      </aside>
+      <div id="topAbsolute">
+        <div class="center-content">
+          
+          <ul id="topMenu" class="noMobile">
+            <li>
+              <span>{{ 'global.topMenu.langue'|trans }}</span>
+              <ul class="subMenu">
+              {% if selectedCheese is defined %}
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'en', cheese: selectedCheese}) }}">English</a></li>
+                {#<li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'de', cheese: selectedCheese}) }}">Deutsch</a></li>#}
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'ru', cheese: selectedCheese}) }}">Русский</a></li>
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'jp', cheese: selectedCheese}) }}">日本語</a></li>
+              {% elseif receipt is defined %}
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'en', receipt: receipt}) }}">English</a></li>
+                {#<li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'de', cheese: selectedCheese}) }}">Deutsch</a></li>#}
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'ru', receipt: receipt}) }}">Русский</a></li>
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'jp', receipt: receipt}) }}">日本語</a></li>
+              {% else %}
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'en'}) }}">English</a></li>
+                {#<li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'de'}) }}">Deutsch</a></li>#}
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'ru'}) }}">Русский</a></li>
+                <li><a href="{{ path( app.request.attributes.get('_route'), {_locale:'jp'}) }}">日本語</a></li>
+              {% endif %}
+              </ul>
+            </li>
+            <li>
+              <a href="{{ path('heidi_alpen_contact') }}">{{ 'global.topMenu.contact'|trans }}</a>
+            <li>
+                <a href="{{ path('heidi_alpen_files') }}">{{ 'global.topMenu.login'|trans }}</a>      
+            </li>
+          </ul>
+
+
+          <a href="{{ path('heidi_alpen_homepage') }}" id="logo">
+            <img src="{{ asset('imgs/logo.png') }}" alt="HEIDI-Alpen logo" />
+          </a>
+          
+        </div>
+
+        <nav id="mainNav" class="noMobile">
+          {{ knp_menu_render('mainMenu', {'compressed': true, 'depth': 1}) }}
+          <div class="clear"></div>
+        </nav>
+
+        <div id="mobileNav" class="noDesktop">
+          <div id="menuToggler">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+          </div>
+          <nav>
+            <a href="{{ path('heidi_alpen_homepage') }}" id="logo-menu">
+              <img src="{{ asset('imgs/logo.png') }}" alt="HEIDI-Alpen logo" />
+            </a>
+            {{ knp_menu_render('mainMenu', {'compressed': true, 'allow_safe_labels': true}) | raw }}
+            <div id="optionNav">
+              <select name="language" id="langSwitcher">
+                  <option>{{ 'global.topMenu.langue'|trans }}</option>
+              {% if selectedCheese is defined %}
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'en', cheese: selectedCheese}) }}">English</option>
+                  {#<option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'de', cheese: selectedCheese}) }}">Deutsch</option>#}
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'ru', cheese: selectedCheese}) }}">Русский</option>
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'jp', cheese: selectedCheese}) }}">日本語</option>
+                {% elseif receipt is defined %}
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'en', receipt: receipt}) }}">English</option>
+                  {#<option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'de', cheese: selectedCheese}) }}">Deutsch</option>#}
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'ru', receipt: receipt}) }}">Русский</option>
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'jp', receipt: receipt}) }}">日本語</option>
+                {% else %}
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'en'}) }}">English</option>
+                  {#<option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'de'}) }}">Deutsch</option>#}
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'ru'}) }}">Русский</option>
+                  <option data-href="{{ path( app.request.attributes.get('_route'), {_locale:'jp'}) }}">日本語</option>
+                {% endif %}
+              </select>
+              <div class="clear"></div>
+            </div>
+          </nav>
+        </div>
+
+        {% block after_header %}{% endblock %}
+        
+      </div>
+
+
+    </header>
+
+    <main id="content">
+
+      {% block main %}{% endblock %}
+
+    </main>
+
+    <footer>
+
+      <div id="signature">
+        <div class="center-content">
+          {% block indexH1and2 %}
+            <img class="montains fullImg" src="{{ asset('imgs/pied_mont_logo.png') }}" alt="Montains" />
+            <strong id="slogan">{{ 'global.footer.slogan'|trans }}</strong>
+          {% endblock %}
+        </div>
+      </div>
+
+      <div id="endOfPagae">
+        <div class="center-content">
+          <nav id="footerNav">
+            {{ knp_menu_render('mainMenu', {'compressed': true, 'allow_safe_labels': true}) | raw }}
+            <span class="clear"></span>
+          </nav>
+
+        </div>
+
+        <section>
+          <div class="center-content">
+            <address><strong>© {{ 'global.address.nom'|trans }}</strong> | {{ 'global.address.group'|trans }} · {{ 'global.address.rue'|trans }} · {{ 'global.address.cp'|trans }} {{ 'global.address.ville'|trans }} · {{ 'global.address.pays'|trans }} · Tel. {{ 'global.address.tel'|trans }} · <a href="{{ path('heidi_alpen_contact') }}">{{ 'global.topMenu.contact'|trans }}</a></address>
+            {#<a href="#">Login</a>#}
+            <span class="clear"></span>
+          </div>
+        </section>
+
+      </div>
+    </footer>
+
+    <div id="mask"></div>
+
+  <script src="{{ asset('js/mootools-core-1.5.1.js') }}"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56635484-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script type="text/javascript">
+    AZ = {
+      objects: [],
+      initialize: function() {
+        Object.each(this.objects, function(o) {
+          o.initialize();
+        });
+      },
+      add: function(name, instance) {
+        this.objects[name] = instance;
+      }
+    };
+  </script>
+  {% block javascripts %}{% endblock %}
+  <script src="{{ asset('js/script.js') }}"></script>
+  <script src="{{ asset('js/mobile.js') }}"></script>
+
+  </body>
+</html>

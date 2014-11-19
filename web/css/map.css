@@ -1,0 +1,337 @@
+#cheeseMap {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  /*&:first-of-type {
+        margin-right: @gutter;
+    }*/
+
+}
+#cheeseMap > h2 {
+  margin-bottom: 40px;
+  transition: opacity 1s linear;
+}
+#cheeseMap #map {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  transition: all 1s ease-out;
+}
+#cheeseMap #map > img {
+  display: inline-block;
+  left: 0;
+  width: 90%;
+}
+#cheeseMap #map figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#cheeseMap #map figcaption a {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  width: 18%;
+}
+#cheeseMap #map figcaption a figure {
+  display: block;
+  position: relative;
+}
+#cheeseMap #map figcaption a figure figcaption {
+  font-size: 12px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #416e80;
+  z-index: 3;
+  font-family: 'Dom Casual W01 Bold 692333';
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: auto;
+  width: 130%;
+  margin-left: -15%;
+  top: -25px;
+  padding-bottom: 25px;
+  background: url(../imgs/cross.png) center bottom no-repeat;
+  transition: none;
+}
+#cheeseMap #map figcaption a figure img {
+  width: 100%;
+  position: relative;
+  display: block;
+  z-index: 2;
+  margin-bottom: 0;
+}
+#cheeseMap #map figcaption a.bottomLegend figure figcaption {
+  top: auto;
+  bottom: -29px;
+  background-position: top;
+  padding-top: 29px;
+  padding-bottom: 0;
+}
+#cheeseMap #map figcaption a#edelsuisse:before {
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 86.5%;
+  height: 133.7%;
+  top: -115%;
+  left: -43%;
+  background: url(../imgs/map_trait_edelSuisse.png) no-repeat transparent;
+  background-size: cover;
+}
+#cheeseMap #map figcaption a#gottardo:before {
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 157%%;
+  height: 115.1%;
+  top: -69%;
+  left: -108%;
+  background: url(../imgs/map_trait_gottardo.png) no-repeat transparent;
+  background-size: cover;
+}
+#cheeseMap #map figcaption a#sbrinz:before {
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 169%;
+  height: 16%;
+  top: 31%;
+  left: -104%;
+  background: url(../imgs/map_trait_sbrinz.png) no-repeat transparent;
+  background-size: cover;
+}
+#cheeseMap #map figcaption a#vacherinfribourgeois:before {
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 68.5%;
+  height: 139.7%;
+  top: -87%;
+  left: 41%;
+  background: url(../imgs/map_trait_vacherinFribourgeois.png) no-repeat transparent;
+  background-size: cover;
+}
+#cheeseMap #appenzeller,
+#cheeseMap .imgAppenzeller {
+  top: 2.3%;
+  left: 63.9%;
+}
+#cheeseMap #edelsuisse,
+#cheeseMap .imgEdelsuisse {
+  top: 71.4%;
+  left: 43.7%;
+}
+#cheeseMap #emmentaler,
+#cheeseMap .imgEmmentaler {
+  top: 17.9%;
+  left: 34.1%;
+}
+#cheeseMap #gottardo,
+#cheeseMap .imgGottardo {
+  top: 67.3%;
+  left: 69%;
+}
+#cheeseMap #gruyere,
+#cheeseMap .imgGruyere {
+  top: 31.4%;
+  left: 9.4%;
+}
+#cheeseMap #sbrinz,
+#cheeseMap .imgSbrinz {
+  top: 28.4%;
+  left: 72.8%;
+}
+#cheeseMap #tetedemoine,
+#cheeseMap .imgTetedemoine {
+  top: 2.2%;
+  left: 16.6%;
+}
+#cheeseMap #vacherinfribourgeois,
+#cheeseMap .imgVacherinfribourgeois {
+  top: 67.6%;
+  left: 18.1%;
+}
+#cheeseMap #cheeseDetails {
+  position: absolute;
+  height: 100%;
+}
+#cheeseMap #cheeseDetails article {
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+#cheeseMap #cheeseDetails article #cheesePlaceholder {
+  position: absolute;
+  top: 0;
+}
+#cheeseMap #cheeseDetails article #cheesePlaceholder > img.caliber {
+  margin-bottom: 0;
+  width: 95% !important;
+}
+#cheeseMap #cheeseDetails article figure {
+  position: absolute;
+  overflow: hidden;
+  width: 18%;
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+#cheeseMap #cheeseDetails article figure img {
+  position: absolute;
+}
+#cheeseMap #cheeseDetails article figure img.cheese {
+  width: 100%;
+  transition: all 1s ease-out;
+}
+#cheeseMap #cheeseDetails article figure img.trait {
+  top: 15%;
+  width: 0%;
+  right: 100%;
+  opacity: 0;
+  transition: all 1s ease-out 1s;
+}
+#cheeseMap #cheeseDetails article figure img.caliber {
+  padding-right: 0;
+  transition: padding 1s ease-out 1s;
+}
+#cheeseMap #cheeseDetails article .close {
+  position: absolute;
+  top: 50px;
+  right: 32px;
+  opacity: 0;
+}
+#cheeseMap #cheeseDetails article h1,
+#cheeseMap #cheeseDetails article p,
+#cheeseMap #cheeseDetails article h2 {
+  width: 53.64583333333333%;
+  margin-left: 1.6666666666666667%;
+  /*&:first-of-type {
+        margin-right: @gutter;
+    }*/
+
+  margin-left: 32.39583333333333%;
+  text-align: left;
+  opacity: 0;
+  transition: none;
+}
+#cheeseMap #cheeseDetails article h2 {
+  color: black;
+  font-family: 'OfficinaSansITCW01-BdIt';
+  font-size: 22px;
+  line-height: 26px;
+  border-bottom: 1px solid #c89e65;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+#cheeseMap #cheeseDetails article .packaging {
+  opacity: 0;
+  transition: none;
+  position: absolute;
+  width: 29.062499999999996%;
+  margin-left: 1.6666666666666667%;
+  /*&:first-of-type {
+        margin-right: @gutter;
+    }*/
+
+}
+#cheeseMap #cheeseDetails article p b {
+  font-family: 'DIN Next W01 Medium';
+  color: black;
+}
+#cheeseMap #cheeseDetails article p strong {
+  color: #c89e65;
+  margin-top: 8px;
+  display: block;
+}
+#cheeseMap.showCheese > h2 {
+  opacity: 0;
+}
+#cheeseMap.showCheese #map {
+  width: 16.516667%;
+  margin-left: 1.6666666666666667%;
+  margin-left: 37.395833%;
+  margin-top: 6.7%;
+}
+#cheeseMap.showCheese #map a {
+  opacity: 0;
+}
+#cheeseMap.showCheese > .caliber {
+  display: none !important;
+}
+#cheeseMap.showCheese #cheeseDetails {
+  position: relative;
+}
+#cheeseMap.showCheese #cheeseDetails figure {
+  top: 3%;
+  left: 0;
+  width: 55%;
+}
+#cheeseMap.showCheese #cheeseDetails figure img.cheese {
+  width: 35%;
+  margin-top: 1.3%;
+  margin-left: 11%;
+}
+#cheeseMap.showCheese #cheeseDetails figure img.trait {
+  width: 72.2%;
+  right: 0;
+  position: absolute;
+  top: 2.3%;
+  opacity: 1;
+}
+#cheeseMap.showCheese.appenzeller #cheeseDetails .appenzeller h1,
+#cheeseMap.showCheese.edelsuisse #cheeseDetails .edelsuisse h1,
+#cheeseMap.showCheese.emmentaler #cheeseDetails .emmentaler h1,
+#cheeseMap.showCheese.gottardo #cheeseDetails .gottardo h1,
+#cheeseMap.showCheese.sbrinz #cheeseDetails .sbrinz h1,
+#cheeseMap.showCheese.tetedemoine #cheeseDetails .tetedemoine h1,
+#cheeseMap.showCheese.vacherinfribourgeois #cheeseDetails .vacherinfribourgeois h1,
+#cheeseMap.showCheese.gruyere #cheeseDetails .gruyere h1,
+#cheeseMap.showCheese.appenzeller #cheeseDetails .appenzeller h2,
+#cheeseMap.showCheese.edelsuisse #cheeseDetails .edelsuisse h2,
+#cheeseMap.showCheese.emmentaler #cheeseDetails .emmentaler h2,
+#cheeseMap.showCheese.gottardo #cheeseDetails .gottardo h2,
+#cheeseMap.showCheese.sbrinz #cheeseDetails .sbrinz h2,
+#cheeseMap.showCheese.tetedemoine #cheeseDetails .tetedemoine h2,
+#cheeseMap.showCheese.vacherinfribourgeois #cheeseDetails .vacherinfribourgeois h2,
+#cheeseMap.showCheese.gruyere #cheeseDetails .gruyere h2,
+#cheeseMap.showCheese.appenzeller #cheeseDetails .appenzeller p,
+#cheeseMap.showCheese.edelsuisse #cheeseDetails .edelsuisse p,
+#cheeseMap.showCheese.emmentaler #cheeseDetails .emmentaler p,
+#cheeseMap.showCheese.gottardo #cheeseDetails .gottardo p,
+#cheeseMap.showCheese.sbrinz #cheeseDetails .sbrinz p,
+#cheeseMap.showCheese.tetedemoine #cheeseDetails .tetedemoine p,
+#cheeseMap.showCheese.vacherinfribourgeois #cheeseDetails .vacherinfribourgeois p,
+#cheeseMap.showCheese.gruyere #cheeseDetails .gruyere p,
+#cheeseMap.showCheese.appenzeller #cheeseDetails .appenzeller .close,
+#cheeseMap.showCheese.edelsuisse #cheeseDetails .edelsuisse .close,
+#cheeseMap.showCheese.emmentaler #cheeseDetails .emmentaler .close,
+#cheeseMap.showCheese.gottardo #cheeseDetails .gottardo .close,
+#cheeseMap.showCheese.sbrinz #cheeseDetails .sbrinz .close,
+#cheeseMap.showCheese.tetedemoine #cheeseDetails .tetedemoine .close,
+#cheeseMap.showCheese.vacherinfribourgeois #cheeseDetails .vacherinfribourgeois .close,
+#cheeseMap.showCheese.gruyere #cheeseDetails .gruyere .close,
+#cheeseMap.showCheese.appenzeller #cheeseDetails .appenzeller .packaging,
+#cheeseMap.showCheese.edelsuisse #cheeseDetails .edelsuisse .packaging,
+#cheeseMap.showCheese.emmentaler #cheeseDetails .emmentaler .packaging,
+#cheeseMap.showCheese.gottardo #cheeseDetails .gottardo .packaging,
+#cheeseMap.showCheese.sbrinz #cheeseDetails .sbrinz .packaging,
+#cheeseMap.showCheese.tetedemoine #cheeseDetails .tetedemoine .packaging,
+#cheeseMap.showCheese.vacherinfribourgeois #cheeseDetails .vacherinfribourgeois .packaging,
+#cheeseMap.showCheese.gruyere #cheeseDetails .gruyere .packaging {
+  opacity: 1;
+  transition: opacity 1s ease-out 1.5s;
+}
+#cheeseMap.transition > .caliber {
+  display: block !important;
+}
+#cheeseMap.transition #cheeseDetails {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}

@@ -1,0 +1,23 @@
+.lang-ru h2,
+.lang-ru .h2 {
+  font-family: 'ITCOfficinaSansW10-Book_862511';
+}
+.lang-ru h3,
+.lang-ru .h3 {
+  font-family: 'ITCOfficinaSansW10-MdIt';
+}
+.lang-ru b,
+.lang-ru strong {
+  font-family: 'ITCOfficinaSansW10-MdIt';
+}
+.lang-ru header #mobileNav nav .mainNav li .menu_level_1 a {
+  font-family: 'ITCOfficinaSansW10-Book_862511';
+}
+.lang-ru .page-index #goToMap a h1,
+.lang-ru .page-index #goToMap a h2 {
+  font-family: 'ITCOfficinaSansW10-Book_862511';
+}
+.lang-ru #cheeseMap #cheeseDetails article .close {
+  width: 35%;
+  text-align: right;
+}

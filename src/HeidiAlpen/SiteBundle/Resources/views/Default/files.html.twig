@@ -1,0 +1,65 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}{{ 'theStory.title'|trans }} · {{ parent() }}{% endblock %}
+{% block meta_description %}{{ 'theStory.seo.description'|trans }}{% endblock %}
+
+{% block body_class %}page-files{% endblock %}
+
+{% block ambiance_picture %}
+  <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" />
+  <img src="{{ asset('imgs/heidi_fond_story_03.jpg') }}" alt="{{ 'theStory.title'|trans }}" class="caliber" />
+{% endblock %}
+
+{% block main %}
+  <div class="center-content fullColor intro">
+    <h1>Fichiers</h1>
+    <p>
+      <b>
+        Téléchargez les fichiers relatifs à Heidi Alpen.
+      </b>
+    </p>
+  </div>
+
+  <section>
+    <div class="center-content fullColor">
+      <table>
+        <thead>
+          <th>Nom du fichier</th>
+          <th>Description</th>
+          <th>Type de fichier</th>
+        </thead>
+        <tbody>
+          {% for media in medias %}
+            <tr>
+              <td>
+                <a target="_blank" href="{% path media, 'reference' %}">{{ media.name }}</a>
+              </td>
+              <td>
+                {{ media.description }}
+              </td>
+              <td>
+                {{ media.contentType }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div>
+    <div class="center-content">
+      <div id="relatedLinks">
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-cheeses.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/the-expertise-methods.html.twig' %}
+        {% include 'HeidiAlpenSiteBundle:Default:relatedLinks/gruyere.html.twig' %}
+      </div>
+    </div>
+  </div>
+
+  <span class="clear"></span>
+  
+{% endblock %}
+
+{% block javascripts %}
+  <script type="text/javascript" src="{{ asset('js/diaporama.js') }}"></script>
+{% endblock %}

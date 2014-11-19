@@ -1,0 +1,201 @@
+.center() {
+	margin-left: auto;
+	margin-right: auto;
+    float: none;
+}
+.100pc() {
+	width: 100%;	
+}
+.colContainer(@ratio, @num) {
+    width: @num / @ratio * 100%;
+}
+.col(@ratio, @gutter, @num:1) {
+    @width: (100% - (@gutter * (@ratio+1))) / @ratio;
+    width: (@width * @num) + (@gutter * (@num - 1));
+    margin-left: @gutter;
+    /*&:first-of-type {
+        margin-right: @gutter;
+    }*/
+}
+.span(@num, @gutter, @span) {
+	@width: (100% - (@gutter * (@num+1))) / @num;
+	margin-left: @span * (@width + @gutter) + @gutter;
+}
+.spanHalf(@ratio, @gutter, @num:1) {
+	@width: (100% - (@gutter * (@ratio+1))) / @ratio;
+	margin-left: -1 * ((@width * @num) + (@gutter * (@num - 1)))/2;
+}
+
+.triangle(@color, @top, @left, @leftREM, @bottom, @right){
+	&:before {
+		content:"";
+		position:absolute;
+		bottom: @bottom; /* value = - border-top-width - border-bottom-width */
+		left: @left; /* controls horizontal position */
+		left: @leftREM;
+		top: @top;
+		right: @right;
+		border-width:10px 10px 0 10px;
+		border-width:1rem 1rem 0 1rem;
+		border-style:solid;
+		border-color:@color transparent;
+		/* reduce the damage in FF3.0 */
+		display:block; 
+		width:0;
+		z-index: 2;
+	}
+}
+
+.triangleStroke(@left, @leftREM, @color, @strokeColor, @width, @widthREM, @height, @heightREM, @strokeWidth, @strokeWidthREM){
+	&:before, 
+	&:after {
+		content:"";
+		position:absolute;
+		top: 0; /* value = - border-top-width - border-bottom-width */
+		left:@left; /* controls horizontal position */
+		left: @leftREM;
+		border-width:@width @height 0 @height;
+		border-width: @widthREM @heightREM 0 @heightREM;
+		border-style:solid;
+		border-color: @strokeColor transparent;
+		/* reduce the damage in FF3.0 */
+		display:block; 
+		width:0;
+	}
+	&:after {
+		top: -1 * @strokeWidth; /* value = - border-top-width - border-bottom-width */
+		top: -1 * @strokeWidthREM;
+		border-color:@color transparent;
+	}
+}
+
+.triangleBig(@left, @leftREM, @color, @width, @widthREM, @height, @heightREM, @strokeWidth, @strokeWidthREM){
+	&:after{
+		content:"";
+		position:absolute;
+		top: 0; /* value = - border-top-width - border-bottom-width */
+		left:@left; /* controls horizontal position */
+		left: @leftREM;
+		border-width:@width @height 0 @height;
+		border-width: @widthREM @heightREM 0 @heightREM;
+		border-style:solid;
+		border-color:@color transparent;
+		/* reduce the damage in FF3.0 */
+		display:block; 
+		width:0;
+	}
+}
+.gradient(@deg, @color1, @color2, @pos1, @pos2){
+	background: -moz-linear-gradient(@deg, @color1 @pos1, @color2 @pos2); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(@pos1,@color1), color-stop(@pos2,@color2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(@deg, @color1 @pos1,@color2 @pos2); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(@deg, @color1 @pos1,@color2 @pos2); /* Opera 11.10+ */
+	background: -ms-linear-gradient(@deg, r@color1 @pos1, @color2 @pos2); /* IE10+ */
+	background: linear-gradient(@deg, @color1 @pos1,@color2 @pos2); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64d4d4d', endColorstr='#e6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.leftStroke(@color){
+//	border-left: 1px solid @color;
+//	border-left: .1rem solid @color;
+	color: @color;
+	display: block;
+	float: left;
+	font-family: 'Rockwell W01';
+	font-size: 12px;
+	font-size: 1.2rem;
+//	line-height: 13px;
+//	line-height: 1.3rem;
+//	margin-top: 5px;
+//	margin-top: .5rem;
+//	padding-left: 5px;
+//	padding-left: .5rem;
+}
+
+.avz-info(){
+	width: 100%;
+	font-family: @rockwellBold;
+	font-size: 15px;
+	font-size: 1.5rem;
+	color: inherit;
+	font-weight: normal;
+	text-transform: none !important;
+	line-height: 18px;
+	line-height: 1.8rem;
+	letter-spacing: .5px;
+	letter-spacing: .05rem;
+	margin: 0;
+}
+
+.simpleTransition(@property, @duration, @timingFunc, @delay){
+	-moz-transition: @property @duration @timingFunc @delay;
+	-webkit-transition: @property @duration @timingFunc @delay;
+	-o-transition: @property @duration @timingFunc @delay;
+	transition: @property @duration @timingFunc @delay;
+}
+
+.transitionTiming(@duration, @delay){
+	-moz-transition-duration: @duration;
+	-webkit-transition-duration: @duration;
+	-o-transition-duration: @duration;
+	transition-duration: @duration;
+	-moz-transition-delay: @delay;
+	-webkit-transition-delay: @delay;
+	-o-transition-delay: @delay;
+	transition-delay: @delay;
+}
+
+.rotate(@deg) {
+	-moz-transform: rotate(@deg);
+	-webkit-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	transform: rotate(@deg);
+}
+
+.placeholder(){
+	color: @grey_20;
+	font-family: @rockwell;
+}
+
+.blur(@property) {
+	-webkit-filter: blur(@property);
+	-moz-filter: blur(@property);
+	-o-filter: blur(@property);
+	filter: blur(@property);
+}
+.adapt(@font-size, @fullWidth, @fullWidthREM ){
+	html{
+		font-size: @font-size;
+	}
+	
+	
+	#body-container {
+		width: @fullWidth;
+		width: @fullWidthREM;
+		#container {
+			#content {
+				&.referencies{
+					.referency{
+						width: (@fullWidth - @margin)/2;
+						&:nth-child(2n) {
+							margin-left: @margin;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+	#body-container {
+		#portfolio-main-menu{
+			width: @fullWidth - @margin * 2;
+			width: @fullWidthREM - @marginREM * 2;
+		}
+	}
+	
+	#suggestion{
+		.triangleStroke(@fullWidth / 2 - 15px, @fullWidthREM / 2 - 1.5rem, @grey_5, @grey_20, 15px, 1.5rem, 16px, 1.6rem, 2px, .2rem);
+	}
+}

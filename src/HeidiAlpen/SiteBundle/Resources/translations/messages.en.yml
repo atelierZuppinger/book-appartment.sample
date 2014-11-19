@@ -1,0 +1,253 @@
+global:
+    topMenu:
+        login: Login
+        langue: Language
+        contact: Contact
+    topNav:
+        theStory: The Story
+        theExpertise: The Expertise
+        theCheeses: The Cheeses
+        theReceipts: The Receipts
+    footer:
+        slogan: Our passion for a swiss legend.
+    address:
+        nom: HEIDI Alpen
+        group: ELSA-MIFROMA GROUP
+        rue: Route de Payerne 2-4
+        cp: 1470
+        ville: Estavayer-Le-Lac
+        pays: Switzerland
+        tel: + 41 (0)26 664 91 11
+        email: vente@elsa.ch
+
+theIndex: 
+    seo:
+        title: Our passion for a swiss legend.
+        description: Switzerland’s real treasures are its delicious cheeses.
+
+theStory:
+    seo:
+        description: Heidi, the little girl in Johanna Spyri’s popular children’s books, loved rambling through the lush mountain pastures, among the cows and flowers.
+    title: The Story
+    header: |
+        Heidi, the little girl in Johanna Spyri’s popular children’s books, loved rambling through the lush mountain pastures, among the cows and flowers. It is in this splendid, well-preserved setting that HEIDI Alpen cheeses are made. Made exclusively in switzerland, our products are the result of MIFROMA’s deep know-how. They are matured, rinsed and cherished until fully ripened. This is how the cheeses develop their intense flavours and authentic character. Although today we may use modern technologies, our passion for fine cheeses is as longstanding as heidi’s tale. Bon appetit !
+    land:
+        title: |
+            Welcome to the land
+            of famous cheeses
+        p0: |
+            Switzerland’s real treasures are its delicious cheeses. MIFROMA is keenly aware of this country’s great heritage and is pleased to introduce the HEIDI Alpen range, a delectable selection of the finest products from Switzerland’s verdant pastures. HEIDI Alpen cheeses are wonderfully authentic. They are crafted in Switzerland using fresh, quality milk, in harmony with nature, traditions and artisanship. They meet stringent specifications pertaining to quality, hygiene and storage standards. In a reflection of Switzerland’s exceptional terroir, our HEIDI Alpen range is characterised by taste and quality.
+    aop:
+        title: |
+            AOP, A seal of 
+            true quality
+        p0: |
+            AOP, or “Appellation d’Origine Protégée” is a globally recognized and certified guarantee of origin, protected by Swiss law. An indication of a controlled designation of origin, only a handful of premium food products around the world carry the AOP label.
+            More than a simple quality seal, AOP helps preserve the livelihood of artisan food producers by ensuring that only these authentic specialty food products — sometimes unique to one location in the world — carry the AOP label. AOP not only helps to safeguard heritage recipes and techniques, but protects the legacy of specialty producers for generations to come.
+            If you’re looking for a guarantee of quality, just look for the AOP label.
+
+theExpertise:
+    seo:
+        description: The secret to a fine cheese is an artful blend of pure, natural origins, quality milk and the skill of a master cheesemaker. 
+    title: The Expertise
+    header: |
+        The secret to a fine cheese is an artful blend of pure, natural origins, quality milk and the skill of a master cheesemaker. MIFROMA has developed its unique cheesemaking know-how for over 50 years, constantly refining its expertise in selecting, maturing and producing cheeses. Once the cheeses have been lovingly crafted in the mountain or ‘local’ villages and cooperative dairies, HEIDI Alpen products are matured in majestic cheese caves that lie deep in the rocky mountainside, where these fine products gently ripen in a temperate, natural environment. It is here that we ensure that the cheeses are regularly washed, checked and turned. 
+        Each cheese wheel is scrupulously controlled for quality. 
+        Many of the steps required to make these superior cheeses are still carried out by hand, whilst the use of cutting-edge technologies ensures perfect hygiene and quality.
+    methods:
+        title: |
+            Traditional methods, 
+            modern techniques
+        p0: |
+            The basic principles of cheese making have remained unchanged over the centuries.
+            The production of Swiss cheeses comprises five stages: curdling; pre-cheesing; heating, forming and saline ­bathing; fermenting ripening; and quality control.
+            Each of our cheeses is the result of centuries of artisan knowledge and skills married with the most modern of quality control and production technologies. For precision and flavor, many of the stages are carried out by hand, from salting and churning to turning and washing the cheese wheel. All cheese is checked individually by our Master Cheese Makers before it goes on sale. A distinctive feature of MIFROMA cheeses is that many of our products are matured in a vast natural cave in Ursy, a village at the foot of the Alps. It was over 50 years ago that this ancient rocky cavern was transformed into the perfect cheese chamber. Carved from the mountainside over century, the rugged walls of our prized grotto retain high levels of humidity and maintain a constant year-round temperature of 50 to 57.2° F. This ­temperate environment is the ideal place in which to mature our cheeses to perfection.
+
+theCheeses:
+    seo:
+        description: Tangy or fruity, creamy or salty, in magnificent wheels or delicate slivers, as a melting fondue or to round off a meal.
+    title: The Cheeses
+    header: |
+        Tangy or fruity, creamy or salty, in magnificent wheels or delicate slivers, as a melting fondue or to round off a meal: the HEIDI Alpen range offers a wide range of delicious specialities.
+        Choose from hundreds of speciality cheeses, selected from Switzerland’s most iconic products. Each cheese is produced in a specific region according to age-old methods and traditions; this cultural richness translates into a great diversity of aromas and flavours. Bite into our delicious heritage !
+    discover:
+        title: |
+            Discover our 
+            complete range
+    maturation: Maturation:
+    gruyere:
+        seo:
+            description: A rich, aromatic Swiss speciality
+        nom: Gruyère AOP
+        maturation: 6 to 14 months
+        slogan: |
+            A rich, aromatic
+            Swiss speciality
+        header: |
+            Produced for centuries around the small town of Gruyère in French-speaking Switzerland, for generations this cheese has been made in village dairies according to an original, traditional recipe. With its salty flavour, the Gruyère AOP is a treat for those who love characterful cheeses. 
+        p0: |
+            This superior-quality cheese owes its unique character to specific production methods. Le Gruyère AOP is prepared from the finest raw milk from cows fed on grass during the summer and hay during the winter. The use of any additives is prohibited.
+        p1: |
+            Le Gruyère AOP cheesewheels are aged in a natural rocky cavern in Ursy, small Swiss village at the foot of the Alps, for a shorter or longer period, to create a milder or stronger flavour. It is in this exceptional environment that Gruyère AOP acquires its succulent, salty character. During the maturation period, the cheese wheels are regularly turned and washed with salt water. These time-honoured techniques, an extended aging process and the care given to this majestic product, all lend Gruyère AOP its incomparable flavor.
+        p2: |
+            Gruyère AOP takes pride of place position on any fine cheese board. Its intense flavour will round off the end of a meal, perfectly accompanied by a glass of fruity, full-bodied wine.
+    sbrinz:
+        seo:
+            description: Some claim that Sbrinz is Switzerland’s oldest cheese, akin to the ‘Caesus Alpinus’ mentioned 2,000 years ago by the Roman poet, Pliny the Elder. 
+        nom: Sbrinz AOP
+        maturation: 20 months
+        slogan: Switzerland’s oldest cheese has a modern appeal
+        header: |
+            Some claim that Sbrinz is Switzerland’s oldest cheese, akin to the ‘Caesus Alpinus’ mentioned 2,000 years ago by the Roman poet, Pliny the Elder. Although these intriguing origins cannot be truly verified, we know that today’s Sbrinz dates back to the 16th century. Hailing from the region of Brienz in central Switzerland, this very hard cheese used to be transported to Italy by mule; in return, Italy sent spices and wine along what became the ‘Sbrinz’ trade route.  
+        p0: |
+            This handcrafted cheese is similar to Parmesan, boasting a rich, pronounced flavor. It owes its hard paste and aromatic profile to a lengthy production process that is still upheld today. 
+        p1: |
+            Recognized under the AOP “protected origin” label of quality (Appellation d’Origine Protégée), Sbrinz is usually aged for a minimum of 20 months, when it develops its deep character. 
+        p2: |
+            This artisanal cheese can be broken into rustic chunks and paired with red wine as an aperitif, or as an essential addition to a cheese platter.
+    emmentaler:
+        seo:
+            description: The pale and creamy Emmentaler AOP is the most iconic of all Swiss cheeses, characterized by its mild flavor and cherry-sized holes. 
+        nom: Emmentaler AOP
+        maturation: 4 to 8 months
+        slogan: The “King of Cheeses”
+        header: |
+            The pale and creamy Emmentaler AOP is the most iconic of all Swiss cheeses, characterized by its mild flavor and cherry-sized holes. Produced in the picturesque valley of the river Emme, this “king of cheeses” has been locally made since the 13th century.
+        p0: |
+            Emmentaler AOP has a deliciously mild, sweet and slightly nutty flavor. Only 200 village dairies, located in the picturesque valley of the river Emme, are authorized to make Swiss Emmentaler cheese, which is crafted to a strict set of time-honored methods. Only milk from cows fed on grass, and not on silage  (preserved pasture feed) can be used. 
+        p1: |
+            The impeccably fresh un-pasteurized milk is collected straight from the dairy and the use of any additives is prohibited. With its sweet, mild taste, Emmentaler AOP truly is a cheese for the whole family; children will love the characterful holes, whilst chefs will delight in its versatile cooking qualities. 
+        p2: |
+            Emmentaler AOP is generally enjoyed cold and is excellent at breakfast or as a dessert. It is the staple of any cheese board.
+    tetedemoine:
+        seo:
+            description: Tête de Moine AOP is a specialty cheese with a history that dates back 800 years and which originates from the Bellelay Abbey in Switzerland’s Bernese Jura region.
+        nom: Tête de Moine AOP
+        maturation: 3 months
+        slogan: A unique cheese, a unique serving style
+        header: |
+            Tête de Moine AOP (literally “monk’s head”) is a specialty cheese with a history that dates back 800 years and which originates from the Bellelay Abbey in Switzerland’s Bernese Jura region. A unique-tasting cheese with a unique serving style, Tête de Moine AOC is usually pared into rosettes with a special knife, or cut into small savory chunks.
+        p0: |
+            Tête de Moine AOP is a strong, semi-hard cheese with a robust aroma and texture. Its full flavor is due to natural untreated milk from dairy cattle that have summer grazed on the spicy herbs and grasses of the Jura mountain pastures and winter-fed on fragrant hay from the same rolling meadows.
+        p1: |
+            This particular cheese is commonly eaten in wafer-thin rosettes, which are shaved off the cheese with a device called a Girolle or a Pirouette. These delicate parings enable the full flavor of the cheese to develop, height-ening the tasting pleasure. 
+        p2: |
+            Tête de Moine should be served straight from the fridge to ensure the correct consistency for paring the rosettes. This gastronomic product can be savored as a starter with an aperitif, as a dessert cheese or a  gourmet snack. 
+    edelsuisse:
+        seo:
+            description: The Bernese Alps is a legendary region in Switzerland, where folkloric traditions continue to upheld against a backdrop of stunning mountainscapes. 
+        nom: Edel Suisse
+        maturation: 3 months
+        slogan: Rich in folklore
+        header: |
+            The Bernese Alps is a legendary region in Switzerland, where folkloric traditions continue to upheld against a backdrop of stunning mountainscapes. In these lush pastures, cows graze on rich pasture, providing creamy milk used to produce this traditional semihard cheese.
+        p0: |
+            Edel Suisse is an artisan product made to traditional methods. Mildly sweet and slightly spicy, the cheese is aged for four months and takes on more character when matured. The pale ivory paste is soft and refi ned, scattered with tiny holes.
+        p1: |
+            With its carved folk motifs, an Edel Suisse wheel will make a stunning addition to any cheese counter. This gourmet cheese is distinguished by an ochre rind decorated with a raised relief of the Edelweiss, the emblem of Switzerland, and the Swiss cross, from the national flag.  
+        p2: |
+            A cheese for all occasions, serve as part of a cocktail platter or dessert cheese tray.
+    appenzeller:
+        seo:
+            description: A mild, spicy cheese from the heart of Switzerland
+        nom: Appenzeller AOP 
+        maturation: 3 to 6 months
+        slogan: A mild, spicy cheese from the heart of Switzerland
+        header: |
+            Appenzeller cheese owes its name to  the region in which it is produced, the Appenzell. Situated in the northeast of Switzerland, this beautiful mountainous area is rich in folklore and heritage; even today, folk music, traditional dancing and ceremonially descending the cows in autumn are just some of the lovely  cultural customs that thrive and flourish in this canton.
+        p0: |
+            The fertile herbal meadows lend Appenzeller its unique flavor. The cheese is washed at  regular intervals with an aromatic herbal brine, the ingredients of which are a closely guarded secret, passed down from generation to generation.
+        p1: |
+            Appenzeller has been produced locally for over 700 years and today, Appenzeller is one of the most popular cheeses in Switzerland, and for good reason. A wonderful addition to any cheese plate, this mild and spicy cheese will be appreciated by lovers of fine food. The delicious herb-infused light taste renders Appenzeller ideal for cooking with and it is a cheese that melts well. 
+        p2: |
+            Appenzeller can be appreciated as a simple dessert and is the perfect companion to crisp, sharp fruit, such as apples.
+    vacherinfribourgeois:
+        seo:
+            description: A fragrant cheese produced with care by artisans
+        nom: Vacherin Fribourgeois AOP
+        slogan: A fragrant cheese produced with care by artisans
+        maturation: 3 months
+        header: |
+            A genuine regional product, Vacherin  Fribourgeois AOP – “Vacherin from Fribourg” - is a subtle reflection of the floral aromas found in the foothills of the Alps and on the Swiss Plateau, located in central - west Switzerland. 
+        p0: |
+            Highly versatile, Vacherin Fribourgeois AOP can be eaten cold or cooked, and is a basic ingredient of the delicious “half and half” fondue, lending this hot dish a thick, creamy texture and pleasant taste. Available in a range of textures ranging from semi-firm to fine, Vacherin Fribourgeois AOP is made from raw or thermically treated milk with a ripening period that varies from nine weeks to several months. 
+        p1: |
+            Vacherin Fribourgeois AOP is produced by artisan cheesemakers in the canton of Fribourg renowned for their cheese making abilities and love of their profession. After treating the rich, fragrant cow’s milk delivered to the dairy each day, these specialist cheese makers craft the raw ingredients according to a traditional, protected recipe. 
+        p2: |
+            Vacherin Fribourgeois AOP  takes a leading position amongst cheese specialties on account of its extremely sophisticated, pleasant-smelling aroma and fine melting properties. This is a product of choice for all cheese connoisseurs and will add an original touch to any gourmet cheese platter. 
+    gottardo:
+        seo:
+            description: Gottardo is a typical Ticinese cheese, soft and milky, with an attractive gray rind that is reminiscent of cheese from this region.
+        nom: Gottardo
+        maturation: 3 to 5 months
+        slogan: Savory mountain flavor
+        header: |
+            Gottardo is a typical Ticinese cheese, soft and milky, with an attractive gray rind that
+            is reminiscent of cheese from this region. Gottardo is named in tribute to the Gotthard
+            Pass, a crucial historic mountain passageway in the heart of Europe, which links northern
+            Switzerland with Ticino, the Italian part of southern Switzerland, en route to Milan.
+        p0: |
+            Crafted from savory milk from the Leventina mountain valley, where the granite peaks touch the clear blue skies, this cheese reflects the landscape from which it hails – characterized by a mild tang, just like the mountain air. With a semi-hard, creamy paste, Gottardo is created by expert artisan hands in the local ‘alpeggi’, or mountain pastures. The cheese is matured in natural caves for at least two months (up to five) where the character of the natural cave aging process adds a savory depth. Serve as a snack at any time, or as a fine addition to a gourmet cheese platter. Gottardo’s stylish artisan wrapping will also make an eyecatching centerpiece in a cheese counter.
+
+theReceipts:
+    seo:
+        description: Discover a collection of simple, original recipes which showcase our cheeses. 
+    title: The Receipts
+    header: |
+        Discover a collection of simple, original recipes which showcase our cheeses. Whether as canapés or hors d’œuvres, for dessert or as a stunning main meal, our cheeses add a touch of character to your dishes. A pure delight!
+    ideas:
+        title: |
+            Recipe ideas for a range of
+            taste sensations.
+    commingSoon: Comming soon
+    taste: Taste
+
+theContact:
+    seo: 
+        description: © HEIDI Alpen | ELSA-MIFROMA GROUP · ROUTE DE PAYERNE 2-4 · 1470 ESTAVAYER-LE-LAC · SWITZERLAND · TEL. + 41 (0)26 664 91 11
+    title: Contact
+    header: |
+        We would be delighted to hear from you. 
+        Please fill in the form below with 
+        your comments, requests or suggestions.
+
+form:
+    contact:
+        salutation: 'Title *'
+        choice:
+            m: Mr
+            mlle: Ms
+            mme: Mrs
+            pi: "Product Information"
+            pr: "Press and PR"
+            ot: "Others"
+        firstname: 'First name *'
+        lastname: 'Last name *'
+        subject: 'Subject *'
+        email: 'Email *'
+        country: 'Country *'
+        message: 'Message *'
+    required:
+        general: |
+            Your attention please, some information is missing.
+            Please check information below.
+        salutation: "Please select your title"
+        firstname: 'Please enter your first name'
+        lastname: 'Please enter your last name'
+        email: 'Please enter your e-mail'
+        email_invalid: 'This is not a valid email address. Please try again.'
+        country: "Please enter your country"
+        message: 'Please enter your message'
+    submit: Submit
+
+mail:
+    salutation: 'Sincerely,'
+    contact:
+        flash:
+            success: 'Thank you for your message'
+        message: 'Thank you for your interest. We have dully received your message and we will respond as soon as possible.'
+        subject: 'Your message'
+        title: 'HEIDI Alpen | Acknowledgement'
+
+    admin:
+        title: "Contact via formulaire du site"

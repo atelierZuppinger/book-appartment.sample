@@ -1,0 +1,36 @@
+<article class="edelsuisse">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgEdelsuisse imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_edel.png') }}" alt="{{ 'theCheeses.edelsuisse.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_ed.png') }}" alt="{{ 'theCheeses.edelsuisse.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_ed.png') }}" alt="trait" />
+    </figure>
+  </div>
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.edelsuisse.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.edelsuisse.slogan'|trans }}</h2>
+  <img class="packaging" src="{{ asset('imgs/heidi_pack_edel.png') }}" alt="{{ 'theCheeses.edelsuisse.nom'|trans }}" />
+  <p>
+    <b>{{ 'theCheeses.edelsuisse.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.edelsuisse.p0'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.edelsuisse.p1'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.edelsuisse.p2'|trans }}
+  </p>
+  <p>
+    {% if app.request.getLocale() == 'ru' %}
+      <strong>
+        * Грюйер с официальным сертификатом контроля подлинности происхождения<br />
+        {{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.edelsuisse.maturation'|trans }}
+      </strong>
+    {% else %}
+      <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.edelsuisse.maturation'|trans }}</strong>
+    {% endif %}
+  </p>
+</article>

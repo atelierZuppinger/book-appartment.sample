@@ -1,0 +1,4 @@
+parameters:
+    domain_name: "localhost.ch"
+    enable_analytics: false
+    google_analytics: "UA-12345678-1"

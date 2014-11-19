@@ -1,0 +1,22 @@
+<article class="gottardo">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgGottardo imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_gott.png') }}" alt="{{ 'theCheeses.gottardo.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_go.png') }}" alt="{{ 'theCheeses.gottardo.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_go.png') }}" alt="trait" />
+    </figure>
+  </div>
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.gottardo.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.gottardo.slogan'|trans }}</h2>
+  <p>
+    <b>{{ 'theCheeses.gottardo.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.gottardo.p0'|trans }}
+  </p>
+  <p>
+      <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.gottardo.maturation'|trans }}</strong>
+  </p>
+</article>

@@ -1,0 +1,55 @@
+.fullColor {
+  background: url(../imgs/whiteOpacity80.png);
+}
+.fullColorBlue {
+  background: url(../imgs/turquoiseOpacity10.png);
+}
+.form .line select,
+.form .line input[type=text],
+.form .line input[type=email],
+.form .line input[type=password],
+.form .line textarea {
+  background-color: #f2f2f2;
+}
+header #topMenu li strong {
+  background: url(../imgs/whiteOpacity20.png);
+}
+header #topMenu li .subMenu {
+  background: url(../imgs/whiteOpacity20.png);
+}
+header #photoGallery ul li {
+  visibility: hidden;
+}
+header #photoGallery ul li.current {
+  visibility: visible;
+}
+header #photoGallery menu button {
+  background: url(../imgs/circle.png);
+}
+header #photoGallery menu button.current {
+  background: url(../imgs/circle-selected.png);
+}
+header #photoGallery #legends span {
+  background: url(../imgs/whiteOpacity80.png);
+  margin-left: 29% !important;
+}
+header #mainNav {
+  background: url(../imgs/whiteOpacity80.png);
+}
+main #relatedLinks a:hover figure img {
+  filter: alpha(opacity=80);
+}
+.page-index #relatedLinks a:hover figure img {
+  filter: alpha(opacity=80);
+}
+#cheeseMap.showCheese #map a {
+  visibility: hidden;
+}
+footer #endOfPagae section a.strong {
+  background: url(../imgs/whiteOpacity20.png);
+}
+@media screen and (max-width: 900px) {
+  .page-temporaire header #photoGallery #legends .center-content span.current {
+    margin-left: auto !important;
+  }
+}

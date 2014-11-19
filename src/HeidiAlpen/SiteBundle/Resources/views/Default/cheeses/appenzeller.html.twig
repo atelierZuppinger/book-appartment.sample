@@ -1,0 +1,28 @@
+<article class="appenzeller">
+  <div id="cheesePlaceholder">
+    <img src="{{ asset('imgs/heidi_map.png') }}" class="caliber" alt="{{ 'theCheeses.title'|trans }}" />
+    <figure class="imgAppenzeller imgProduct">
+      <img class="trait" src="{{ asset('imgs/map_small_trait_app.png') }}" alt="{{ 'theCheeses.appenzeller.nom'|trans }}" />
+      <img class="cheese" src="{{ asset('imgs/from_ap.png') }}" alt="{{ 'theCheeses.appenzeller.nom'|trans }}" />
+      <img class="caliber" src="{{ asset('imgs/from_ap.png') }}" alt="trait" />
+    </figure>
+  </div>
+  <a class="button close" href="{{ path('heidi_alpen_the_cheeses') }}">{{ 'theCheeses.discover.title'|trans }}</a>
+  <h1>{{ 'theCheeses.appenzeller.nom'|trans }}{% if app.request.getLocale() == 'ru' %}*{% endif %}</h1>
+  <h2>{{ 'theCheeses.appenzeller.slogan'|trans }}</h2>
+  <p>
+    <b>{{ 'theCheeses.appenzeller.header'|trans }}</b>
+  </p>
+  <p>
+    {{ 'theCheeses.appenzeller.p0'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.appenzeller.p1'|trans }}
+  </p>
+  <p>
+    {{ 'theCheeses.appenzeller.p2'|trans }}
+  </p>
+  <p>
+    <strong>{{ 'theCheeses.maturation'|trans }} {{ 'theCheeses.appenzeller.maturation'|trans }}</strong>
+  </p>
+</article>

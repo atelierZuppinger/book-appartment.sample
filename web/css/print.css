@@ -1,0 +1,9 @@
+header,
+footer,
+#relatedLinks,
+.intro {
+  display: none;
+}
+main {
+  padding-bottom: 0;
+}

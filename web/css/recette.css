@@ -1,0 +1,123 @@
+.page-receipts .receiptLink {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  float: left;
+  margin-bottom: 12px;
+}
+.page-receipts .receiptLink figcaption {
+  display: inline-block;
+  font-family: 'DIN Next W01 Light';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 10px;
+  line-height: 20px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'DIN Next W06 Regular';
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  transition: opacity 1s linear;
+  z-index: 12;
+  border-bottom: 1px solid white;
+}
+.page-receipts .receiptLink figcaption:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../imgs/cross.png) center bottom no-repeat;
+  width: 100%;
+  height: 26px;
+  bottom: -10px;
+  left: 0;
+}
+.page-receipts .receiptLink:hover img {
+  opacity: .8;
+}
+.page-receipts .receiptLink:hover figcaption {
+  background-color: white;
+  border-color: #c89e65;
+}
+.page-receipts .receiptLink:hover figcaption:after {
+  background-image: url(../imgs/cross.hover.png);
+}
+.page-receipts .receiptLink img {
+  margin-bottom: 0;
+}
+.page-receipts .receiptLink .img {
+  width: 100%;
+  position: absolute;
+}
+.page-receipts .receiptLink figcaption {
+  bottom: 15px;
+  width: 15%;
+  text-transform: none;
+  font-family: 'OfficinaSansITCW01-BdIt';
+  font-size: 22px;
+  line-height: 26px;
+  font-family: 'OfficinaSerifITCW01-MdI';
+  left: 10px;
+  top: 10px;
+  bottom: auto;
+  margin-top: 0;
+}
+.page-receipts .receiptLink.small {
+  width: 42.028395%;
+}
+.page-receipts .receiptLink.small img {
+  width: 135%;
+  margin-left: -17.5%;
+}
+.page-receipts .receiptLink.small figcaption {
+  width: 35.69015661911429%;
+}
+.page-receipts .receiptLink.medium {
+  width: 56.2962962962963%;
+}
+.page-receipts .receiptLink.medium figcaption {
+  width: 26.644736842105264%;
+}
+.page-receipts .receiptLink.large img {
+  margin-top: -9%;
+}
+.page-receipts .receiptLink:nth-child(4),
+.page-receipts .receiptLink:first-child {
+  margin-right: 1.68%;
+}
+.page-receipts .receiptLink:hover figcaption {
+  display: block;
+}
+.page-receipt #specs,
+.page-receipt #description {
+  position: relative;
+  float: left;
+  width: 68.57142857142857%;
+  margin-left: 1.6666666666666667%;
+  /*&:first-of-type {
+        margin-right: @gutter;
+    }*/
+
+  margin-left: 15.714285714285714%;
+}
+.page-receipt #specs {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.page-receipt #specs ul {
+  margin-bottom: 10px;
+  font-family: 'DIN Next W01 Light';
+}
+.page-receipt #specs ul li {
+  font-family: 'OfficinaSerifITCW01-MdI';
+}
+.page-receipt #specs ul li:first-child {
+  margin-top: 5px;
+}
+.page-receipt .button {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
+}
